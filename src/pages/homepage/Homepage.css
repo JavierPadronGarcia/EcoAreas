@@ -1,23 +1,37 @@
-.container{
+.container {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    
-}
-
-.header-background {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
-    width: 100vw;
-    height: 70px;
-    background: #D9D9D9;
+    background-color: #7481cf;
 }
 
 .first-information-panel {
     margin-top: 2vh;
-    width: 48vw;   
-    height: 267px;
-    background: #D9D9D9;
+    width: 90vw;
+    height: fit-content;
+    background: #55c59d; 
 }
+
+.first-information-panel>p {
+    margin: 3%;
+    text-align: center;
+}
+
+
+/*
+.first-color { 
+	background: #c1f880; 
+}
+	
+.second-color { 
+	background: #55c59d; 
+}
+
+.third-color { 
+	background: #4f5aa8; 
+}
+
+.fourth-color { 
+	background: #7481cf; 
+}
+*/
