@@ -20,15 +20,15 @@
 .button-container {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   width: 50vw;
   height: 10vh;
 }
 
 .navbar-toggle {
   all: unset;
-  display: none;
-  margin-right: 20%;
+  display: flex;
+  margin-right: 10%;
   width: 30%;
   height: 50%;
   cursor: pointer;
@@ -41,7 +41,7 @@
 }
 
 .navbar-menu {
-  display: flex;
+  display: none;
   align-items: center;
 }
 
@@ -60,32 +60,49 @@
 .navbar-link {
   color: black;
   font-size: 150%;
-  text-decoration: none;
+  text-decoration: solid;
   padding: 3%;
+}
+
+.navbar-link:hover {
+  color: #7481cf;
 }
 
 .space-links {
   margin: 5vw;
 }
 
+@media only screen and (min-width: 768px) {
 
+  .navbar {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100vw;
+  }
 
-@media only screen and (max-width: 768px) {
-  .navbar-menu {
+  .button-container {
     display: none;
   }
 
-  .navbar-toggle {
-    display: flex;
+  #top-border {
+    border: 0;
   }
-}
 
-@media only screen and (min-width: 768px) {
   .navbar-menu {
-    position: fixed;
-    width: 50%;
-    margin-left: 45%;
-    border: 1px solid red;
+    display: flex;
+    width: 80%;
+  }
+
+  .navbar-item {
+    justify-content: flex-end;
+  }
+
+  .navbar-link {
+    padding: 5%;
+  }
+
+  .space-links {
+    margin: 0;
   }
 }
 
