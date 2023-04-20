@@ -1,4 +1,53 @@
-#image-item{
-    width: 100Svw;
-    
+.image-container {
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+}
+
+.image-container ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 16s infinite alternate ease-in-out;
+}
+
+.image-container li {
+    list-style: none;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+.image-container p {
+    width: 93vw;
+    text-align: center;
+    margin-left: 3vw;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0%;
+    }
+
+    33% {
+        margin-left: 0%;
+    }
+
+    43% {
+        margin-left: -135%;
+    }
+
+    73% {
+        margin-left: -135%;
+    }
+
+    83% {
+        margin-left: -267%;
+    }
+
+    100% {
+        margin-left: -267%;
+    }
 }

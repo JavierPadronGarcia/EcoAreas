@@ -13,17 +13,15 @@ function ImageCarrusel() {
 
   const showCarrusel = () => {
     return (
-      <div>
-          {carrusel.map((image) => (
-            <div key={image.id} className="image-container">
-              <img src={`/assets/img/${image.img}`} alt="carruselImg" id="image-item" />
-            </div>
-          ))}
-        <div>
-        </div>
-      </div>
+      <ul>
+        {carrusel.map((image) => (
+          <li key={image.id}>
+            <img src={`/assets/img/${image.img}`} alt="carruselImg"/>
+            <p>{image.text}</p>
+          </li>
+        ))}
+      </ul>
     );
-
   }
 
   useEffect(() => {
@@ -31,7 +29,10 @@ function ImageCarrusel() {
   }, []);
 
   return (
-    showCarrusel()
+    <div className="image-container">
+      {showCarrusel()}
+    </div>
+
   );
 }
 
