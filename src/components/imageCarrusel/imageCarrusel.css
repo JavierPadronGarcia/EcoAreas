@@ -7,17 +7,18 @@
 .image-container ul {
     display: flex;
     padding: 0;
-    width: 400%;
+    width: 400vw;
     animation: slide 16s infinite alternate ease-in-out;
 }
 
 .image-container li {
     list-style: none;
-    width: 100%;
+    width: 100vw;
 }
 
 .image-container img {
-    width: 100%;
+    object-fit: cover;
+    width: 100vw;
 }
 
 .image-container p {
@@ -36,18 +37,18 @@
     }
 
     43% {
-        margin-left: -135%;
+        margin-left: -100%;
     }
 
     73% {
-        margin-left: -135%;
+        margin-left: -100%;
     }
 
     83% {
-        margin-left: -267%;
+        margin-left: -200%;
     }
 
     100% {
-        margin-left: -267%;
+        margin-left: -200%;
     }
 }

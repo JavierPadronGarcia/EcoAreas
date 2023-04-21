@@ -16,7 +16,7 @@ function ImageCarrusel() {
       <ul>
         {carrusel.map((image) => (
           <li key={image.id}>
-            <img src={`/assets/img/${image.img}`} alt="carruselImg"/>
+            <img src={`/assets/img/${image.img}`} alt="carruselImg" />
             <p>{image.text}</p>
           </li>
         ))}
@@ -32,7 +32,6 @@ function ImageCarrusel() {
     <div className="image-container">
       {showCarrusel()}
     </div>
-
   );
 }
 
