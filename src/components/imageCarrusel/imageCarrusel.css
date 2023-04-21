@@ -5,6 +5,7 @@
 }
 
 .image-container ul {
+    margin-top: 0;
     display: flex;
     padding: 0;
     width: 400vw;
@@ -24,7 +25,7 @@
 .image-container p {
     width: 93vw;
     text-align: center;
-    margin-left: 3vw;
+    margin-left: 3.2vw;
 }
 
 @keyframes slide {

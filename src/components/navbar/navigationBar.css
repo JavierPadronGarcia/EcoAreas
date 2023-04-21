@@ -46,7 +46,7 @@
 }
 
 #top-border {
-  border: 1px solid black;
+  border: 1px solid #55c59d;
 }
 
 .navbar-item {
@@ -58,7 +58,7 @@
 }
 
 .navbar-link {
-  color: black;
+  color: white;
   font-size: 150%;
   text-decoration: solid;
   padding: 3%;

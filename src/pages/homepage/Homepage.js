@@ -10,7 +10,6 @@ function Homepage() {
     <div className="container">
       {/* Header */}
       <NavigationBar />
-
       <ImageCarrusel />
 
       <Footer />

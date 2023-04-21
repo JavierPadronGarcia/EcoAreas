@@ -16,6 +16,7 @@ const NavigationBar = () => {
     if (!isOpen) {
       setIcon(faXmark);
       document.getElementById("navbar").style.height = "20vh";
+      document.getElementById("navbar").style.animation = "show 1s normal  ease-in-out;"
     } else {
       setIcon(faBars);
       document.getElementById("navbar").style.height = "10vh";
