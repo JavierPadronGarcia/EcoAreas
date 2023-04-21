@@ -1,10 +1,7 @@
 import "./navigationBar.css";
-
 import React, { useState } from 'react';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 const NavigationBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +13,6 @@ const NavigationBar = () => {
     if (!isOpen) {
       setIcon(faXmark);
       document.getElementById("navbar").style.height = "20vh";
-      document.getElementById("navbar").style.animation = "show 1s normal  ease-in-out;"
     } else {
       setIcon(faBars);
       document.getElementById("navbar").style.height = "10vh";

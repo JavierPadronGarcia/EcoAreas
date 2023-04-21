@@ -1,6 +1,6 @@
 import carruselImagesService from "../../services/carruselImages.service";
 import React, { useState, useEffect } from 'react';
-import "./imageCarrusel.css";
+import "./imageCarousel.css";
 
 function ImageCarrusel() {
 

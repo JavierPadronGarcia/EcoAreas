@@ -1,6 +1,6 @@
 
 import Footer from "../../components/footer/Footer";
-import ImageCarrusel from "../../components/imageCarrusel/ImageCarrusel";
+import ImageCarrusel from "../../components/imageCarousel/ImageCarousel";
 import NavigationBar from "../../components/navbar/NavigationBar";
 import "./Homepage.css";
 
@@ -11,7 +11,6 @@ function Homepage() {
       {/* Header */}
       <NavigationBar />
       <ImageCarrusel />
-
       <Footer />
     </div>
 
