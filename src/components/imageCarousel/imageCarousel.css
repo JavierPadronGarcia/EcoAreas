@@ -2,6 +2,7 @@
     width: 100vw;
     height: auto;
     overflow: hidden;
+    z-index: 1;
 }
 
 .image-container ul {

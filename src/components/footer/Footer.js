@@ -17,7 +17,7 @@ function Footer() {
       <div className="social-network-links-container">
         {link.map((link) => (
           <div key={link.id} id="link-icon-container">
-            <a href=''><FontAwesomeIcon icon={link.icon} id="link-icon" /></a>
+            <a href={link.ref}><FontAwesomeIcon icon={link.icon} id="link-icon" /></a>
           </div>
         ))}
       </div>
@@ -30,7 +30,24 @@ function Footer() {
 
   return (
     <div className="main-footer">
-      {showLinks()}
+      <div className="left-side-container">
+        <div>
+          <p>© Copyright de Contenido e imágenes</p>
+        </div>
+      </div>
+
+      <div className="middle-side-container">
+        <div className="top-side-container">
+
+        </div>
+        {showLinks()}
+      </div>
+
+      <div className="right-side-container">
+
+      </div>
+
+
     </div>
   );
 }
