@@ -37,14 +37,12 @@ function Footer() {
       </div>
 
       <div className="middle-side-container">
-        <div className="top-side-container">
-
-        </div>
         {showLinks()}
       </div>
 
       <div className="right-side-container">
-
+        <div id="cookies"><a href='/'>Cookies</a></div>
+        <div id="privacy-policity"><a href='/'>Política de Privacidad</a></div>
       </div>
 
 

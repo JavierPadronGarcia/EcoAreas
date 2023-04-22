@@ -3,6 +3,7 @@ import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import newsSpliderService from '../../services/newsSplider.service';
 import "./NewsSplider.css";
 
+
 function NewsSplider() {
 
   const [splider, setSplider] = useState([]);
@@ -20,10 +21,10 @@ function NewsSplider() {
             <SplideSlide className='splide-slide'>
               <div className='news-container'>
                 <div id='image-container'>
-                  <img src={`/assets/img/${news.img}`} />
+                  <img src={`/assets/img/splider/${news.img}`} alt='SpliderImg' />
                 </div>
                 <div id='text-container'>{news.text}</div>
-                <div id='link-news'><a href='/'>Ir a la noticia</a></div>
+                <div id='link-news'><a href='/' id="link">Ir a la noticia</a></div>
               </div>
             </SplideSlide>
           ))}
@@ -37,8 +38,14 @@ function NewsSplider() {
   }, []);
 
   return (
-    <div className="splider-container">
-      {showSplider()}
+    <div className="relevant-news">
+      <div className="relevant-news-title">
+        <p id='title-text'>Noticias relevantes</p>
+        <p id='instructions'>Deslice para ver más</p>
+      </div>
+      <div className="splider-container">
+        {showSplider()}
+      </div>
     </div>
   );
 }

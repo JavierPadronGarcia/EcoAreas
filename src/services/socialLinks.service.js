@@ -1,5 +1,5 @@
-import { faFacebook, faInstagram, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faWifi } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook, faInstagram, faTwitter, faYoutube, faGithub } from "@fortawesome/free-brands-svg-icons";
+
 
 const socialLinks = [
     {
@@ -20,8 +20,8 @@ const socialLinks = [
         ref: "https://www.instagram.com/ecoareas_mardetodos/"
     }, {
         id: 5,
-        icon: faWifi,
-        ref: "https://www.ecoareasmardetodos.org/blog-feed.xml"
+        icon: faGithub,
+        ref: "https://github.com/JavierPadronGarcia/EcoAreas"
     }
 ];
 

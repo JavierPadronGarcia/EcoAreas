@@ -16,7 +16,7 @@ function ImageCarrusel() {
       <ul>
         {carrusel.map((image) => (
           <li key={image.id}>
-            <img src={`/assets/img/${image.img}`} alt="carruselImg" />
+            <img src={`/assets/img/Carousel/${image.img}`} alt={`carouselImg-${image.id}`} />
             <p>{image.text}</p>
           </li>
         ))}

@@ -7,19 +7,10 @@ import "./Homepage.css";
 
 function Homepage() {
   return (
-
     <div className="container">
-      {/* Header */}
       <NavigationBar />
       <ImageCarrusel />
-      <div className="relevant-news">
-        <div className="relevant-news-title">
-          <p>Noticias relevantes</p>
-        </div>
-        <div className="splider">
-          <NewsSplider />
-        </div>
-      </div>
+      <NewsSplider />
       <Footer />
     </div>
   );
