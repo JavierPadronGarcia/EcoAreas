@@ -12,16 +12,14 @@ const NavigationBar = () => {
 
     if (!isOpen) {
       setIcon(faXmark);
-      document.getElementById("navbar").style.height = "20vh";
     } else {
       setIcon(faBars);
-      document.getElementById("navbar").style.height = "10vh";
     }
   };
 
   return (
     <>
-      <nav className="navbar" id="navbar">
+      <div className="navbar" id="navbar">
 
         <div className="navbar-brand">
           <a href="/" className="navbar-logo">Ecoáreas</a>
@@ -34,17 +32,20 @@ const NavigationBar = () => {
         </div>
 
         <div className={`navbar-menu${isOpen ? 'open' : ''}`}>
-          <div id="top-border"></div>
           <div className="navbar-item">
-            <a href="/" className="navbar-link">Home</a>
-            <span className="space-links"></span>
-            <a href="/about" className="navbar-link">About</a>
-            <span className="space-links"></span>
-            <a href="/contact" className="navbar-link">Contact</a>
+            <div className="homepage">
+              <div><a href="/" className="navbar-link">Inicio</a></div>
+            </div>
+            <div className="newspage">
+              <div><a href="/news" className="navbar-link">Noticias</a></div>
+            </div>
+            <div className="aboutpage">
+              <div><a href="/about" className="navbar-link">El Proyecto</a></div>
+            </div>
           </div>
         </div>
 
-      </nav>
+      </div>
     </>
   );
 };

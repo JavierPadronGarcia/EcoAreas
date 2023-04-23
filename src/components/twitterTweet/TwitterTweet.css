@@ -1,0 +1,9 @@
+.Twit {
+    width: 100vw;
+}
+
+#title-twit {
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+}

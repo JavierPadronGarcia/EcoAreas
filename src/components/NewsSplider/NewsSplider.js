@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
-import newsSpliderService from '../../services/newsSplider.service';
+import newsSpliderService from '../../services/news.service';
 import "./NewsSplider.css";
 
 
@@ -21,7 +21,7 @@ function NewsSplider() {
             <SplideSlide className='splide-slide'>
               <div className='news-container'>
                 <div id='image-container'>
-                  <img src={`/assets/img/splider/${news.img}`} alt='SpliderImg' />
+                  <img src={`/assets/img/news/${news.img}`} alt='SpliderImg' />
                 </div>
                 <div id='text-container'>{news.text}</div>
                 <div id='link-news'><a href='/' id="link">Ir a la noticia</a></div>
