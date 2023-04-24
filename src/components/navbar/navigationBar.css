@@ -7,7 +7,6 @@
   width: 100vw;
   height: fit-content;
   background: #4f5aa8;
-  z-index: 2;
 }
 
 .navbar-logo {
@@ -67,7 +66,7 @@
   font-size: 150%;
 }
 
-.navbar-link:hover {
+.navbar-item:hover {
   color: red;
 }
 
@@ -96,6 +95,7 @@
 
   .navbar-item {
     justify-content: flex-end;
+    border-top: none;
   }
 
   .navbar-link {

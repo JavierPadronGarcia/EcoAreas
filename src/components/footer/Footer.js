@@ -44,8 +44,6 @@ function Footer() {
         <div id="cookies"><a href='/'>Cookies</a></div>
         <div id="privacy-policity"><a href='/'>Política de Privacidad</a></div>
       </div>
-
-
     </div>
   );
 }
