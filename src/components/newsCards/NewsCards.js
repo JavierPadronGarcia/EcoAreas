@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import newsCards from '../../services/news.service';
+import newsContent from '../../services/news.service';
 import "./newsCards.css";
+import CardForNews from '../CardsForNews/CardForNews';
 
 
 function NewsCards() {
@@ -8,7 +9,7 @@ function NewsCards() {
   const [cards, setCards] = useState([]);
 
   const getCards = () => {
-    const Cards = newsCards.getNews();
+    const Cards = newsContent.getNews();
     setCards(Cards);
   }
 
@@ -17,15 +18,7 @@ function NewsCards() {
       <div className='news-cards'>
         {
           cards.map((news) => (
-            <div key={news.id} className='new-card'>
-              <div id='card-image-container'>
-                <img src={`/assets/img/news/${news.img}`} alt='SpliderImg' />
-              </div>
-              <div id='card-text-container'>
-                <div>{news.text}</div>
-                <div id='link-news'><a href='/' id="link">Ir a la noticia</a></div>
-              </div>
-            </div>
+            <CardForNews ident={news.id} image={news.img} text={news.text} linkRef="/" />
           ))}
       </div>
     );
