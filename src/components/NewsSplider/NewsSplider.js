@@ -14,10 +14,11 @@ function NewsSplider() {
   }
 
   const showSplider = () => {
+    const selectedCards = splider.slice(0, 3);
     return (
       <Splide hasTrack={false} id='splide-container'>
         <SplideTrack>
-          {splider.map((news) => (
+          {selectedCards.map((news) => (
             <SplideSlide className='splide-slide'>
               <div className='news-container'>
                 <div id='image-container'>

@@ -56,19 +56,20 @@
 
 
 @media only screen and (min-width: 600px) {
-    .image-container li {
-        width: 90vw;
-        margin-right: 5vw;
-        margin-left: 5vw;
-    }
 
-    .image-container img {
+    .image-container img,
+    .image-container p,
+    .image-container li {
         width: 90vw;
     }
 
     .image-container p {
-        width: 90vw;
         margin-left: 0;
+    }
+
+    .image-container li {
+        margin-right: 5vw;
+        margin-left: 5vw;
     }
 
 }
