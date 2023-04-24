@@ -34,7 +34,7 @@ const NavigationBar = () => {
         <div className={`navbar-menu${isOpen ? 'open' : ''}`}>
           <div className="navbar-item">
             <div className="homepage">
-              <div><a href="/" className="navbar-link">Inicio</a></div>
+              <a href="/" className="navbar-link">Inicio</a>
             </div>
             <div className="newspage">
               <div><a href="/news" className="navbar-link">Noticias</a></div>

@@ -17,7 +17,7 @@ function NewsCards() {
       <div className='news-cards'>
         {
           cards.map((news) => (
-            <div className='new-card'>
+            <div key={news.id} className='new-card'>
               <div id='card-image-container'>
                 <img src={`/assets/img/news/${news.img}`} alt='SpliderImg' />
               </div>
