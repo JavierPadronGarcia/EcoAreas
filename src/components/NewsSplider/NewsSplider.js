@@ -16,19 +16,18 @@ function NewsSplider() {
 
   const showSplider = () => {
     const selectedCards = splider.slice(0, 3);
+
+    const splideOptions = {
+      type: "",
+      perPage: 1,
+      padding: "1rem",
+    }
     return (
-      <Splide hasTrack={false} id='splide-container'
-        options={{
-          perPage: 1,
-          padding: '1rem',
-          arrows: false,
-          pagination: false
-        }}
-      >
+      <Splide id='splide-container' hasTrack={false} options={splideOptions}>
         <SplideTrack>
           {selectedCards.map((news) => (
             <SplideSlide className='splide-slide'>
-              <CardForNews className='card-splider' ident={news.id} image={news.img} text={news.text} linkRef="/" />
+              <CardForNews className='card-splider' id= {news.id} ident={news.id} image={news.img} text={news.text} linkRef="/" />
             </SplideSlide>
           ))}
         </SplideTrack>
