@@ -40,7 +40,7 @@ const NavigationBar = () => {
               <div><a href="/news" className="navbar-link">Noticias</a></div>
             </div>
             <div className="NetworkPage">
-              <div><a href="/contact" className="navbar-link">Red de Ecoareas</a></div>
+              <div><a href="/network" className="navbar-link">Red de Ecoareas</a></div>
             </div>
           </div>
         </div>

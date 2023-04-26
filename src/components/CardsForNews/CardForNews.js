@@ -16,7 +16,7 @@ function cardForNews(props) {
             <img src={`/assets/img/news/${image}`} alt='CardImg' />
           </div>
           <div id='card-text-container'>
-            <div>{text}</div>
+            <div id='text-title'>{text}</div>
             <div id='link-news'><a href={linkRef} id="link">Ir a la noticia</a></div>
           </div>
         </div>

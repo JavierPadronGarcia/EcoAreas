@@ -17,6 +17,7 @@
 #splide-container-list {
     display: flex;
     width: 100vw;
+    height: 100vw;
     margin: 0;
     padding: 0;
 }
@@ -51,41 +52,143 @@
         margin-left: 5vw
     }
 
+    #card-text-container {
+        font-size: 1.5rem;
+    }
+
     #card-image-container img {
         border-top-left-radius: 12% !important;
         border-top-right-radius: 12% !important;
     }
 
     #splide-container-list {
-        height: 35rem;
+        height: 85vw;
     }
 
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
+    #title-text {
+        font-size: 1.5rem;
+    }
+
     .splide-slide {
-        margin-left: 20vw;
+        margin-left: 0;
     }
 
     .new-card,
     #card-image-container,
     #card-text-container div {
-        width: 55vw !important;
+        width: 40vw !important;
     }
 
     #card-image-container,
     #card-text-container div {
-        margin-left: 7.5vw
+        margin-left: 15vw;
+    }
+
+    #card-text-container {
+        margin-top: 1rem;
     }
 
     #splide-container-list {
-        height: 35rem;
+        height: 75vw;
     }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+    .splide-slide {
+        margin-left: 1vw;
+    }
+
+    #card-text-container {
+        margin-top: 2rem;
+    }
+
+    #card-text-container {
+        font-size: 1.3rem;
+    }
+
+    #splide-container-list {
+        height: 65vw;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    #title-text {
+        font-size: 1.7rem;
+    }
+
+    #splide-container-list {
+        height: 50vw;
+    }
+
+    .new-card,
+    #card-image-container,
+    #card-text-container div {
+        width: 30vw !important;
+    }
+
+    #card-image-container,
+    #card-text-container div {
+        margin-left: 20vw;
+    }
+
+    .splide-slide {
+        margin-left: 9vw;
+    }
+
+    #link-news {
+        margin-top: 5vw !important;
+        margin-bottom: 4vw !important;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+
+    #splide-container-list {
+        height: 40vw;
+    }
+
+    .new-card,
+    #card-image-container,
+    #card-text-container div {
+        width: 24vw !important;
+    }
+
+    #card-image-container,
+    #card-text-container div {
+        margin-left: 23vw;
+    }
+
+    .splide-slide {
+        margin-left: 2.5vw;
+    }
+
+    #link-news {
+        margin-top: 3vw !important;
+        margin-bottom: 3vw !important;
+    }
+
+    #card-text-container {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 1680px) {
+
+    .splide-slide {
+        margin-left: 15vw;
+    }
+
+    #splide-container-list {
+        height: 35vw;
+    }
+
+    #card-text-container {
+        font-size: 1.2rem;
+    }
+}

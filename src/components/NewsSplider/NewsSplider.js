@@ -20,12 +20,12 @@ function NewsSplider() {
     breakpoints: {
       768: {
         perPage: 1,
-      }
+      },
     }
   }
 
   const showSplider = () => {
-    const selectedCards = splider.slice(0, 3);
+    const selectedCards = splider.slice(0, 6);
 
     return (
       <Splide id='splide-container' hasTrack={false} options={splideOptions}>

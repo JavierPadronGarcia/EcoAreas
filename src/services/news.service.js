@@ -15,6 +15,14 @@ const SpliderNewsService = [
         id: 4,
         img: "Noticia-4.png",
         text: `Ecoáreas Mardetodos lleva a cabo en El Hierro y La Gomera iniciativas para preservar el litoral`
+    }, {
+        id: 5,
+        img: "Noticia-5.png",
+        text: `Ecoáreas promueve el astroturismo con una actividad de observación de estrellas en La Laja`
+    }, {
+        id: 6,
+        img: "Noticia-6.png",
+        text: `Ecoáreas Mardetodos presenta el plan de acción del proyecto palmero de Los Cancajos`
     }
 ];
 
