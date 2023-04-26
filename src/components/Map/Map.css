@@ -1,0 +1,8 @@
+.leaflet-container {
+    margin: 0 auto;
+    width: 75vh;
+    height: 50vh;
+    box-shadow: 2vw 4vw 5vw #545d95,
+        -1vw -1vw 1.5vw #94a5ff;
+    border-radius: 4%;
+}

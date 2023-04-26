@@ -4,7 +4,6 @@ import newsContent from '../../services/news.service';
 import CardForNews from '../CardsForNews/CardForNews';
 import "./NewsSplider.css";
 
-
 function NewsSplider() {
 
   const [splider, setSplider] = useState([]);
@@ -14,20 +13,26 @@ function NewsSplider() {
     setSplider(Splider);
   }
 
+  const splideOptions = {
+    type: "",
+    perPage: 2,
+    padding: "1rem",
+    breakpoints: {
+      768: {
+        perPage: 1,
+      }
+    }
+  }
+
   const showSplider = () => {
     const selectedCards = splider.slice(0, 3);
 
-    const splideOptions = {
-      type: "",
-      perPage: 1,
-      padding: "1rem",
-    }
     return (
       <Splide id='splide-container' hasTrack={false} options={splideOptions}>
         <SplideTrack>
           {selectedCards.map((news) => (
             <SplideSlide className='splide-slide'>
-              <CardForNews className='card-splider' id= {news.id} ident={news.id} image={news.img} text={news.text} linkRef="/" />
+              <CardForNews className='card-splider' id={news.id} ident={news.id} image={news.img} text={news.text} linkRef="/" />
             </SplideSlide>
           ))}
         </SplideTrack>

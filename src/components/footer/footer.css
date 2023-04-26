@@ -5,7 +5,16 @@
     background: #4f5aa8;
     margin-top: 5%;
     padding-top: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
+}
+
+.right-side-container a {
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.right-side-container a:hover {
+    color: white;
 }
 
 .left-side-container,
@@ -51,6 +60,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 70%;
+    height: 90%;
 }
 
 #link-icon-container {
@@ -102,9 +112,6 @@
 #privacy-policity {
     margin-bottom: 5%;
 }
-
-
-
 
 
 @media only screen and (min-width: 600px) {}

@@ -1,7 +1,8 @@
 import './App.css';
 import { Route, Routes, BrowserRouter } from "react-router-dom";
-import Homepage from './pages/homepage/Homepage';
-import Newspage from './pages/newspage/Newspage';
+import Homepage from './pages/Homepage/Homepage';
+import Newspage from './pages/Newspage/Newspage';
+import EcoareasNetwork from './pages/EcoareasNetwork/EcoareasNetwork';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/news" element={<Newspage />} />
+        <Route path="/contact" element={<EcoareasNetwork />} />
       </Routes>
     </BrowserRouter>
   );

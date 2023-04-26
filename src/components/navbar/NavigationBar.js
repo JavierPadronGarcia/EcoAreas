@@ -39,8 +39,8 @@ const NavigationBar = () => {
             <div className="newspage">
               <div><a href="/news" className="navbar-link">Noticias</a></div>
             </div>
-            <div className="aboutpage">
-              <div><a href="/about" className="navbar-link">El Proyecto</a></div>
+            <div className="NetworkPage">
+              <div><a href="/contact" className="navbar-link">Red de Ecoareas</a></div>
             </div>
           </div>
         </div>

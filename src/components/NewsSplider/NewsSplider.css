@@ -24,7 +24,7 @@
 .splide-slide {
     list-style: none;
     margin-right: 7rem;
-    margin-left: 1.5rem;
+    margin-left: 10%;
 }
 
 .splide__arrow,
@@ -36,7 +36,7 @@
 @media only screen and (min-width: 600px) {
 
     .splide-slide {
-        margin-left: 6rem;
+        margin-left: 17vw;
     }
 
     .new-card,
@@ -57,13 +57,32 @@
     }
 
     #splide-container-list {
-        height: 67vh;
+        height: 35rem;
     }
 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .splide-slide {
+        margin-left: 20vw;
+    }
+
+    .new-card,
+    #card-image-container,
+    #card-text-container div {
+        width: 55vw !important;
+    }
+
+    #card-image-container,
+    #card-text-container div {
+        margin-left: 7.5vw
+    }
+
+    #splide-container-list {
+        height: 35rem;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}

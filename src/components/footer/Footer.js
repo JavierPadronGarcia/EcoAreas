@@ -37,9 +37,6 @@ function Footer() {
       </div>
 
       <div className="middle-side-container">
-        <div className='contact-container'>
-          <a href='/contact'>Contactanos</a>
-        </div>
         {showLinks()}
       </div>
 
