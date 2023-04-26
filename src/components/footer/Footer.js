@@ -41,8 +41,8 @@ function Footer() {
       </div>
 
       <div className="right-side-container">
-        <div id="cookies"><a href='/'>Cookies</a></div>
-        <div id="privacy-policity"><a href='/'>Política de Privacidad</a></div>
+        <div id="cookies"><div><a href='/'>Cookies</a></div></div>
+        <div id="privacy-policity"><div><a href='/'>Política de Privacidad</a></div></div>
       </div>
     </div>
   );

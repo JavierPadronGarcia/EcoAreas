@@ -153,19 +153,8 @@
         height: 40vw;
     }
 
-    .new-card,
-    #card-image-container,
-    #card-text-container div {
-        width: 24vw !important;
-    }
-
-    #card-image-container,
-    #card-text-container div {
-        margin-left: 23vw;
-    }
-
     .splide-slide {
-        margin-left: 2.5vw;
+        margin-left: 10vw;
     }
 
     #link-news {
@@ -174,21 +163,6 @@
     }
 
     #card-text-container {
-        font-size: 1.2rem;
-    }
-}
-
-@media only screen and (min-width: 1680px) {
-
-    .splide-slide {
-        margin-left: 15vw;
-    }
-
-    #splide-container-list {
-        height: 35vw;
-    }
-
-    #card-text-container {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 }

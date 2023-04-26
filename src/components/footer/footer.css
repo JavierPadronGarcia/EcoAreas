@@ -1,8 +1,8 @@
 .main-footer {
     display: flex;
-    width: 100%;
-    height: 100%;
     background: #4f5aa8;
+    height: 100%;
+    width: 100%;
     margin-top: 5%;
     padding-top: 2%;
     padding-bottom: 1%;
@@ -30,19 +30,13 @@
     height: 25vw;
 }
 
-.contact-container {
-    margin-bottom: 3%;
-}
-
-.contact-container>a:hover {
-    color: white;
-}
-
-
 .left-side-container,
 .right-side-container {
     width: 30%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .left-side-container>div {
@@ -52,15 +46,16 @@
 }
 
 .left-side-container>div>p {
-    margin: 5%;
+    margin-left: 10%;
 }
 
 .social-network-links-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     width: 70%;
-    height: 90%;
+    height: 100%;
 }
 
 #link-icon-container {
@@ -89,35 +84,92 @@
     color: black;
 }
 
-.right-side-container {
-    display: flex;
-    flex-direction: column;
-}
-
 .right-side-container div {
     display: flex;
-    height: 50%;
+    height: 100%;
     text-align: center;
     justify-content: center;
+    align-items: center;
 }
 
-.right-side-container>div>a {
+.right-side-container a {
     color: black;
 }
 
 #cookies {
-    margin-top: 5%;
+    height: 40%;
 }
 
 #privacy-policity {
-    margin-bottom: 5%;
+    height: 60%;
 }
 
+@media only screen and (min-width: 535px) {
+    .left-side-container {
+        display: flex;
+        justify-content: center;
+    }
 
-@media only screen and (min-width: 600px) {}
+    .middle-side-container {
+        height: 20vw;
+    }
 
-@media only screen and (min-width: 768px) {}
+}
 
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 689px) {
 
-@media only screen and (min-width: 1200px) {}
+    .main-footer {
+        justify-content: center;
+        display: flex;
+    }
+
+    #link-icon-container {
+        width: 7vw;
+        height: 7vw;
+    }
+
+    .left-side-container,
+    .right-side-container,
+    .middle-side-container {
+        width: 33%;
+    }
+
+}
+
+@media only screen and (min-width: 900px) {
+    .middle-side-container {
+        height: 12vw;
+    }
+
+    #link-icon-container {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    #link-icon {
+        height: 3vw;
+    }
+
+    .left-side-container,
+    .right-side-container {
+        width: 40%;
+    }
+
+    .middle-side-container {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .middle-side-container {
+        height: fit-content;
+        width: 60%;
+    }
+
+    .left-side-container,
+    .right-side-container {
+        width: 20%;
+    }
+
+}
