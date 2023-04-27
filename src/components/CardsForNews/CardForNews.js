@@ -17,7 +17,7 @@ function cardForNews(props) {
           </div>
           <div id='card-text-container'>
             <div id='text-title'>{text}</div>
-            <div id='link-news'><a href={linkRef} id="link">Ir a la noticia</a></div>
+            <div id='link-news'><div><a href={linkRef} id="link">Ir a la noticia</a></div></div>
           </div>
         </div>
       </div>

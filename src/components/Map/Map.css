@@ -1,8 +1,33 @@
 .leaflet-container {
     margin: 0 auto;
-    width: 75vh;
+    width: 100vw;
     height: 50vh;
     box-shadow: 2vw 4vw 5vw #545d95,
         -1vw -1vw 1.5vw #94a5ff;
     border-radius: 4%;
+}
+
+@media only screen and (min-width: 480px) {
+    .leaflet-container {
+        width: 95vw;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .leaflet-container {
+        width: 90vw;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .leaflet-container {
+        width: 70vw;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .leaflet-container {
+        width: 50vw;
+    }
+    
 }

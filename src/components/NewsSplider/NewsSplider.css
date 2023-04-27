@@ -33,7 +33,6 @@
     display: none;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
     .splide-slide {
@@ -48,12 +47,12 @@
 
 
     #card-image-container,
-    #card-text-container div {
-        margin-left: 5vw
+    #card-text-container>div {
+        margin-left: 5vw;
     }
 
     #card-text-container {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     #card-image-container img {
@@ -74,7 +73,7 @@
     }
 
     .splide-slide {
-        margin-left: 0;
+        margin-left: 1vw;
     }
 
     .new-card,
@@ -100,7 +99,7 @@
 @media only screen and (min-width: 992px) {
 
     .splide-slide {
-        margin-left: 1vw;
+        margin-left: 2vw;
     }
 
     #card-text-container {
@@ -112,7 +111,26 @@
     }
 
     #splide-container-list {
-        height: 65vw;
+        height: 60vw;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+
+    .splide-slide {
+        margin-left: 8vw;
+    }
+
+    #card-text-container {
+        margin-top: 2rem;
+    }
+
+    #card-text-container {
+        font-size: 1.3rem;
+    }
+
+    #splide-container-list {
+        height: 60vw;
     }
 }
 
