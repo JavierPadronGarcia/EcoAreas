@@ -47,6 +47,13 @@ We invite you to actively participate in the processes for the promotion of the 
 
 * [![React][React.js]][React-url]
 
+If you want to see the first design of this project go to the links below:
+
+- [mobile view]
+- [tablet view]
+- [desktop view]
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -122,6 +129,7 @@ Project Link: [https://github.com/JavierPadronGarcia/EcoAreas.git](https://githu
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
+* [figma] -> Design 
 * [React Leaflet] -> Open Source Map
 * [Font Awesome] -> Free Icons
 * [Flexbox Guide]
@@ -135,3 +143,10 @@ Project Link: [https://github.com/JavierPadronGarcia/EcoAreas.git](https://githu
 [React Leaflet]: https://react-leaflet.js.org
 [Font Awesome]: https://fontawesome.com
 [Visual Studio Code]: https://code.visualstudio.com
+[figma]:https://www.figma.com
+
+[mobile view]:https://www.figma.com/proto/xKjOHzaoEbItKQAmQmKsKx/Javier-Padr%C3%B3n-Garc%C3%ADa--Dise%C3%B1o-Eco%C3%A1reas?type=design&node-id=1-2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1
+
+[tablet view]:https://www.figma.com/proto/xKjOHzaoEbItKQAmQmKsKx/Javier-Padr%C3%B3n-Garc%C3%ADa--Dise%C3%B1o-Eco%C3%A1reas?type=design&node-id=25-1176&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=25%3A1176&show-proto-sidebar=1
+
+[desktop view]:https://www.figma.com/proto/xKjOHzaoEbItKQAmQmKsKx/Javier-Padr%C3%B3n-Garc%C3%ADa--Dise%C3%B1o-Eco%C3%A1reas?type=design&node-id=25-2175&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=25%3A2175&show-proto-sidebar=1
