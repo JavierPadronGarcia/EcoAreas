@@ -1,69 +1,137 @@
-# EcoAreas project
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a name="readme-top">Ecoáreas Project</a>
 
-## Available Scripts
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+    <img src=".\public\assets\img\Logo.webp" alt="Logo">
+</div>
 
-In the project directory, you can run:
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-### `npm start`
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Ecoáreas-mardetodos is an innovative blue economy initiative that seeks to transform the use and management of coastal areas towards a model that rewards and promotes sustainable and responsible practices and horizontal management.
+<br/><br/>
+A project promoted and financed by the Regional Ministry of Tourism, Industry and Trade of the Government of the Canary Islands, with co-financing from the European Union's Plan Avanza ERDF funds, based on three pillars: voluntary agreements, participation and horizontal management.
+<br/><br/>
+In the Eco-areas your opinion and your action are of vital importance.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+We invite you to actively participate in the processes for the promotion of the Canarian Network of Coastal Ecotourism Areas.
 
-### `npm test`
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Built With
 
-### `npm run build`
+* [![React][React.js]][React-url]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- GETTING STARTED -->
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Have a text editor like [Visual Studio Code]
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Have installed the lastest version of node js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+you can see what version is installed with:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ ```sh
+  node --version
+  ```
 
-## Learn More
+If you don't have node js <a href='https://nodejs.org/en'>click here</a> to install it
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone the repo
+   ```sh
+   git clone https://github.com/JavierPadronGarcia/EcoAreas.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
 
-### Code Splitting
+3. Once you have done this, to start the project use in the project folder
+    ```sh
+    npm start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Analyzing the Bundle Size
+<!-- ROADMAP -->
+## Roadmap
+- [ ] Add a page for each news
+- [ ] Multi-language Support
+    - [ x ] Spanish
+    - [ ] English
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Making a Progressive Web App
+<!-- CONTRIBUTING -->
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-### Advanced Configuration
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-### Deployment
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<!-- CONTACT -->
+## Contact
 
-### `npm run build` fails to minify
+Javier Padrón García -- padrongarciajavier04@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Project Link: [https://github.com/JavierPadronGarcia/EcoAreas.git](https://github.com/JavierPadronGarcia/EcoAreas.git)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+* [React Leaflet] -> Open Source Map
+* [Font Awesome] -> Free Icons
+* [Flexbox Guide]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- URL for images and links -->
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Flexbox Guide]: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+[React Leaflet]: https://react-leaflet.js.org
+[Font Awesome]: https://fontawesome.com
+[Visual Studio Code]: https://code.visualstudio.com

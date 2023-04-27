@@ -9,6 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Homepage />} />
+        <Route path="/home" element={<Homepage />} />
         <Route path="/news" element={<Newspage />} />
         <Route path="/network" element={<EcoareasNetwork />} />
       </Routes>
