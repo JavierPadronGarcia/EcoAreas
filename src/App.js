@@ -1,7 +1,7 @@
 import './App.css';
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Homepage from './pages/Homepage/Homepage';
-import Newspage from './pages/Newspage/Newspage';
+import Newspage from './pages/newspage/Newspage';
 import EcoareasNetwork from './pages/EcoareasNetwork/EcoareasNetwork';
 
 function App() {
