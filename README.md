@@ -89,7 +89,7 @@ If you don't have node js <a href='https://nodejs.org/en'>click here</a> to inst
 ## Roadmap
 - [ ] Add a page for each news
 - [ ] Multi-language Support
-    - [ x ] Spanish
+    - [x] Spanish
     - [ ] English
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
