@@ -85,7 +85,7 @@ If you don't have node js <a href='https://nodejs.org/en'>click here</a> to inst
    npm install
    ```
 
-3. Once you have done this, to start the project use in the project folder
+3. Once you have done this, to start the project
     ```sh
     npm start
     ```
