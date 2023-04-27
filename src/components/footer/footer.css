@@ -84,6 +84,10 @@
     color: black;
 }
 
+#link-icon-container:last-child {
+    transform: rotate(45deg);
+}
+
 .right-side-container div {
     display: flex;
     height: 100%;
@@ -172,4 +176,12 @@
         width: 20%;
     }
 
+    #link-icon-container {
+        width: 4vw;
+        height: 4vw;
+    }
+
+    #link-icon {
+        height: 2.5vw;
+    }
 }

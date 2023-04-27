@@ -25,7 +25,7 @@ function NewsSplider() {
   }
 
   const showSplider = () => {
-    const selectedCards = splider.slice(0, 6);
+    const selectedCards = splider.slice(0, 4);
 
     return (
       <Splide id='splide-container' hasTrack={false} options={splideOptions}>

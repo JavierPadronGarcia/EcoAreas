@@ -1,6 +1,7 @@
 import Map from "../../components/Map/Map";
 import Footer from "../../components/footer/Footer";
 import NavigationBar from "../../components/navbar/NavigationBar";
+import TwitterTweet from "../../components/twitterTweet/TwitterTweet";
 import mapMarkers from "../../services/mapmarkers.service";
 import "./EcoareasNetwork.css";
 function EcoareasNetwork() {
@@ -12,6 +13,7 @@ function EcoareasNetwork() {
       <div className="map-container">
         <Map markers={currentMarkers} />
       </div>
+      <TwitterTweet />
       <Footer />
     </div>
   );

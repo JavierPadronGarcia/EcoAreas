@@ -4,3 +4,14 @@
     font-size: 2rem;
     color: white;
 }
+
+.Twit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.twitter-tweet {
+    width: 90vw !important;
+}
