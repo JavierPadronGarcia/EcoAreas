@@ -3,7 +3,6 @@ import "./Map.css";
 
 function Map(props) {
   const markers = props.markers;
-
   return (
     <div className='map-container-div'>
       <MapContainer center={[28.685721, -15.628115]} zoom={7} scrollWheelZoom={true}>

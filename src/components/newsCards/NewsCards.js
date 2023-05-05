@@ -9,8 +9,17 @@ function NewsCards() {
   const [cards, setCards] = useState([]);
 
   const getCards = () => {
-    const Cards = newsContent.getNews();
-    setCards(Cards);
+    newsContent.getNews().then(data => {
+      let allNews = [];
+      data.forEach(item => {
+        allNews.push({
+          id: item.val().id,
+          img: item.val().img,
+          text: item.val().text
+        })
+      })
+      setCards(allNews);
+    })
   }
 
   const showCards = () => {
@@ -34,7 +43,5 @@ function NewsCards() {
     </div>
   );
 }
-
-
 
 export default NewsCards;

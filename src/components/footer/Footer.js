@@ -1,33 +1,9 @@
+import { faFacebook, faInstagram, faTwitter, faYoutube, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import socialLinks from "../../services/socialLinks.service";
-import React, { useState, useEffect } from 'react';
+import { faWifi } from "@fortawesome/free-solid-svg-icons";
 import "./footer.css";
 
 function Footer() {
-
-  const [link, setLink] = useState([]);
-
-  const getLink = () => {
-    const Link = socialLinks.getLinks();
-    setLink(Link);
-  }
-
-  const showLinks = () => {
-    return (
-      <div className="social-network-links-container">
-        {link.map((link) => (
-          <div key={link.id} id="link-icon-container">
-            <a href={link.ref}><FontAwesomeIcon icon={link.icon} id="link-icon" /></a>
-          </div>
-        ))}
-      </div>
-    );
-  }
-
-  useEffect(() => {
-    getLink();
-  }, []);
-
   return (
     <div className="main-footer">
       <div className="left-side-container">
@@ -37,7 +13,26 @@ function Footer() {
       </div>
 
       <div className="middle-side-container">
-        {showLinks()}
+        <div className="social-network-links-container">
+          <div id="link-icon-container">
+            <a href="https://www.facebook.com/ecoareas"><FontAwesomeIcon icon={faFacebook} id="link-icon" /></a>
+          </div>
+          <div id="link-icon-container">
+            <a href="https://twitter.com/ecoareas"><FontAwesomeIcon icon={faTwitter} id="link-icon" /></a>
+          </div>
+          <div id="link-icon-container">
+            <a href="https://www.youtube.com/channel/UCQb_yo9B1Mvq8HcuyMTn9IQ"><FontAwesomeIcon icon={faYoutube} id="link-icon" /></a>
+          </div>
+          <div id="link-icon-container">
+            <a href="https://www.instagram.com/ecoareas_mardetodos/"><FontAwesomeIcon icon={faInstagram} id="link-icon" /></a>
+          </div>
+          <div id="link-icon-container">
+            <a href="https://github.com/JavierPadronGarcia/EcoAreas"><FontAwesomeIcon icon={faGithub} id="link-icon" /></a>
+          </div>
+          <div id="link-icon-container">
+            <a href="https://www.ecoareasmardetodos.org/blog-feed.xml"><FontAwesomeIcon icon={faWifi} id="link-icon" /></a>
+          </div>
+        </div >
       </div>
 
       <div className="right-side-container">

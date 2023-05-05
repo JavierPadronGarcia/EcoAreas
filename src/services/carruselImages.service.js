@@ -1,4 +1,4 @@
-import { ref, get, remove, push } from "firebase/database";
+import { ref, get } from "firebase/database";
 import database from "../firebase";
 
 const carouselRef = ref(database, "/CarouselImages");

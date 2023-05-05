@@ -9,8 +9,17 @@ function NewsSplider() {
   const [splider, setSplider] = useState([]);
 
   const getSplider = () => {
-    const Splider = newsContent.getNews();
-    setSplider(Splider);
+    newsContent.getNews().then(data => {
+      let allNews = [];
+      data.forEach(item => {
+        allNews.push({
+          id: item.val().id,
+          img: item.val().img,
+          text: item.val().text
+        })
+      })
+      setSplider(allNews);
+    })
   }
 
   const splideOptions = {
@@ -56,7 +65,5 @@ function NewsSplider() {
     </div>
   );
 }
-
-
 
 export default NewsSplider;
