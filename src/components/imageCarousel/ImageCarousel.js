@@ -7,8 +7,17 @@ function ImageCarrusel() {
   const [carrusel, setCarrusel] = useState([]);
 
   const getCarrusel = () => {
-    const Carrusel = carruselImagesService.getImages();
-    setCarrusel(Carrusel);
+    carruselImagesService.getCarousel().then(data => {
+      let allCarousel = [];
+      data.forEach(item => {
+        allCarousel.push({
+          id: item.val().id,
+          img: item.val().img,
+          text: item.val().text
+        })
+      });
+      setCarrusel(allCarousel);
+    })
   }
 
   const showCarrusel = () => {
