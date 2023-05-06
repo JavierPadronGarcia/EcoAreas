@@ -1,5 +1,5 @@
 
-import NewsSplider from "../../components/NewsSplider/NewsSplider";
+import NewsSplider from "../../components/newsSplider/NewsSplider";
 import Footer from "../../components/footer/Footer";
 import ImageCarrusel from "../../components/imageCarousel/ImageCarousel";
 import NavigationBar from "../../components/navbar/NavigationBar";

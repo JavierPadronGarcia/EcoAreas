@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import newsContent from '../../services/news.service';
 import "./newsCards.css";
-import CardForNews from '../CardsForNews/CardForNews';
+import CardForNews from '../cardsForNews/CardForNews';
 
 
 function NewsCards() {
@@ -38,7 +38,7 @@ function NewsCards() {
   }, []);
 
   return (
-    <div className="News-container">
+    <div className="news-container">
       {showCards()}
     </div>
   );

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Map from "../../components/Map/Map";
+import Map from "../../components/map/Map";
 import Footer from "../../components/footer/Footer";
 import NavigationBar from "../../components/navbar/NavigationBar";
 import TwitterTweet from "../../components/twitterTweet/TwitterTweet";

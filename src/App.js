@@ -1,8 +1,8 @@
-import './App.css';
 import { Route, Routes, BrowserRouter } from "react-router-dom";
-import Homepage from './pages/Homepage/Homepage';
+import EcoareasNetwork from './pages/ecoareasNetwork/EcoareasNetwork';
+import Homepage from './pages/homepage/Homepage';
 import Newspage from './pages/newspage/Newspage';
-import EcoareasNetwork from './pages/EcoareasNetwork/EcoareasNetwork';
+import './App.css';
 
 function App() {
   return (

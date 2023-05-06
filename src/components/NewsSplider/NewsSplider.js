@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import newsContent from '../../services/news.service';
-import CardForNews from '../CardsForNews/CardForNews';
+import CardForNews from '../cardsForNews/CardForNews';
 import "./NewsSplider.css";
 
 function NewsSplider() {
