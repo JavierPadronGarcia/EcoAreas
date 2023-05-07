@@ -15,7 +15,8 @@ function NewsSplider() {
         allNews.push({
           id: item.val().id,
           img: item.val().img,
-          text: item.val().text
+          text: item.val().text,
+          details: item.val().details
         })
       })
       setSplider(allNews);
@@ -33,15 +34,16 @@ function NewsSplider() {
     }
   }
 
+  const selectedCards = splider.slice(0, 4);
+
   const showSplider = () => {
-    const selectedCards = splider.slice(0, 4);
 
     return (
       <Splide id='splide-container' hasTrack={false} options={splideOptions}>
         <SplideTrack>
           {selectedCards.map((news) => (
-            <SplideSlide className='splide-slide'>
-              <CardForNews className='card-splider' id={news.id} ident={news.id} image={news.img} text={news.text} linkRef="/" />
+            <SplideSlide className='splide-slide' key={news.id}>
+              <CardForNews className='card-splider' ident={news.id} image={news.img} text={news.text} />
             </SplideSlide>
           ))}
         </SplideTrack>
@@ -61,6 +63,15 @@ function NewsSplider() {
       </div>
       <div className="splider-container">
         {showSplider()}
+      </div>
+      <div id="news-details">
+        {selectedCards.map((news) => (
+          <div key={news.id} className={`button${news.id}`}>
+            <h2>{news.text}</h2>
+            <p>{news.details}</p>
+          </div>
+        ))}
+
       </div>
     </div>
   );

@@ -1,12 +1,22 @@
 import "./cardForNews.css";
 
 
+
+
 function cardForNews(props) {
   const ident = props.ident;
   const image = props.image;
   const text = props.text;
-  const linkRef = props.linkRef;
 
+  const showDetails = () => {
+    let newsList = document.querySelectorAll('#news-details>div');
+
+    for (let index = 0; index < newsList.length; index++) {
+      let currElement = newsList[index];
+      let hide = !currElement.classList.contains(`button${ident}`);
+      newsList[index].style.display = hide ? "none" : "block";
+    }
+  }
 
   const showCard = () => {
     return (
@@ -17,7 +27,7 @@ function cardForNews(props) {
           </div>
           <div id='card-text-container'>
             <div id='text-title'>{text}</div>
-            <div id='link-news'><div><a href={linkRef} id="link">Ir a la noticia</a></div></div>
+            <div id='link-news'><div><button id="link" onClick={showDetails}>Ver detalles</button></div></div>
           </div>
         </div>
       </div>
