@@ -1,8 +1,5 @@
 import "./cardForNews.css";
 
-
-
-
 function cardForNews(props) {
   const ident = props.ident;
   const image = props.image;
@@ -10,12 +7,15 @@ function cardForNews(props) {
 
   const showDetails = () => {
     let newsList = document.querySelectorAll('#news-details>div');
+    document.getElementById("scollBackButton").style.display = "block";
 
     for (let index = 0; index < newsList.length; index++) {
       let currElement = newsList[index];
       let hide = !currElement.classList.contains(`button${ident}`);
       newsList[index].style.display = hide ? "none" : "block";
     }
+
+    document.getElementById("news-details").scrollIntoView({ behavior: 'smooth' });
   }
 
   const showCard = () => {

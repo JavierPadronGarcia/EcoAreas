@@ -6,6 +6,10 @@
     height: fit-content;
 }
 
+#news-details>div {
+    display: none;
+}
+
 /*
 colors used
 

@@ -7,4 +7,8 @@ const getNews = () => {
     return get(newsRef);
 }
 
-export default { getNews };
+const scrollBack = () => {
+    document.getElementsByClassName("news-container")[0].parentNode.scrollIntoView({ behavior: "smooth" });
+}
+
+export default { getNews, scrollBack };

@@ -61,7 +61,7 @@ function NewsSplider() {
         <p id='title-text'>Noticias relevantes</p>
         <p id='instructions'>Deslice para ver más</p>
       </div>
-      <div className="splider-container">
+      <div className="news-container">
         {showSplider()}
       </div>
       <div id="news-details">
@@ -71,7 +71,7 @@ function NewsSplider() {
             <p>{news.details}</p>
           </div>
         ))}
-
+        <button onClick={newsContent.scrollBack} id="scollBackButton">volver</button>
       </div>
     </div>
   );
