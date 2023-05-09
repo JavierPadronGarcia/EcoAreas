@@ -13,7 +13,7 @@ function Newspage() {
           <div id="left-side-container"></div>
           <p id="news">Noticias</p>
           <div id="right-side-container">
-            <a href="/login">modificar noticias</a>
+            <a href="/login" className="login-link">modificar noticias</a>
           </div>
         </div>
         <NewsCards />

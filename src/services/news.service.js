@@ -1,7 +1,7 @@
 import { ref, get } from "firebase/database";
-import database from "../firebase";
+import db from "../firebase";
 
-const newsRef = ref(database, "/News");
+const newsRef = ref(db.database, "/News");
 
 const getNews = () => {
     return get(newsRef);

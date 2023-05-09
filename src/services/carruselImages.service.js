@@ -1,7 +1,7 @@
 import { ref, get } from "firebase/database";
-import database from "../firebase";
+import db from "../firebase";
 
-const carouselRef = ref(database, "/CarouselImages");
+const carouselRef = ref(db.database, "/CarouselImages");
 
 const getCarousel = () => {
     return get(carouselRef);
