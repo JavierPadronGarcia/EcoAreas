@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import newsContent from '../../services/news.service';
 import CardForNews from '../cardsForNews/CardForNews';
+import Details from '../details/Details';
 import "./NewsSplider.css";
 
 function NewsSplider() {
@@ -56,24 +57,6 @@ function NewsSplider() {
     getSplider();
   }, []);
 
-  const putDetails = (Object) => {
-
-    // console.log(Object.length);
-    // console.log(Object.part1)
-    //console.log(`${Object.part1}`)
-    console.log();
-
-
-    let completeText = "";
-    for (let index = 0; index < Object.length; index++) {
-      console.log(Object[index])
-      return (<p>{Object[index]}</p>);
-    }
-
-    return completeText;
-
-  }
-
   return (
     <div className="relevant-news">
       <div className="relevant-news-title">
@@ -85,11 +68,9 @@ function NewsSplider() {
       </div>
       <div id="news-details">
         {selectedCards.map((news) => (
-          <div key={news.id} className={`button${news.id}`}>
+          <div key={news.id} className={`button${news.id}`} id={`button${news.id}`}>
             <h2>{news.text}</h2>
-            {
-              putDetails(news.details)
-            }
+            <Details Object={news.details} />
           </div>
         ))}
         <button onClick={newsContent.scrollBack} id="scollBackButton">volver</button>

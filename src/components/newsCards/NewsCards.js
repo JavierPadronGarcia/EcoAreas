@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import newsContent from '../../services/news.service';
-import "./newsCards.css";
+import Details from '../details/Details';
 import CardForNews from '../cardsForNews/CardForNews';
+import "./newsCards.css";
 
 function NewsCards() {
 
@@ -47,7 +48,7 @@ function NewsCards() {
         {cards.map((news) => (
           <div key={news.id} className={`button${news.id}`}>
             <h2>{news.text}</h2>
-            <p>{news.details}</p>
+            <Details Object={news.details} />
           </div>
         ))}
         <button onClick={newsContent.scrollBack} id='scollBackButton'>volver</button>
