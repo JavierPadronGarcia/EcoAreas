@@ -23,7 +23,7 @@ function cardForNews(props) {
       <div className='Card-container'>
         <div key={ident} className='new-card'>
           <div id='card-image-container'>
-            <img src={`/assets/img/news/${image}`} alt='CardImg' />
+            <img src={image} alt='CardImg' />
           </div>
           <div id='card-text-container'>
             <div id='text-title'>{text}</div>
