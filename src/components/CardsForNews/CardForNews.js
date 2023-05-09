@@ -17,10 +17,9 @@ function cardForNews(props) {
 
     document.getElementById("news-details").scrollIntoView({ behavior: 'smooth' });
   }
-
-  const showCard = () => {
-    return (
-      <div className='Card-container'>
+  
+  return (
+    <div className='Card-container'>
         <div key={ident} className='new-card'>
           <div id='card-image-container'>
             <img src={image} alt='CardImg' />
@@ -31,13 +30,6 @@ function cardForNews(props) {
           </div>
         </div>
       </div>
-    );
-  }
-
-  return (
-    <>
-      {showCard()}
-    </>
   );
 }
 
