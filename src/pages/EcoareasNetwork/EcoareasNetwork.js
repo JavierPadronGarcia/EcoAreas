@@ -13,6 +13,7 @@ function EcoareasNetwork() {
     mapMarkers.getMapMarkers().then(data => {
       let allMarkers = [];
       data.forEach(item => {
+
         allMarkers.push({
           description: item.val().description,
           latitude: item.val().latitude,
@@ -37,6 +38,7 @@ function EcoareasNetwork() {
       <Footer />
     </div>
   );
+
 }
 
 export default EcoareasNetwork;

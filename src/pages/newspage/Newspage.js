@@ -9,7 +9,13 @@ function Newspage() {
     <div className="container">
       <NavigationBar />
       <div className="news-section">
-        <p>Noticias</p>
+        <div className="title">
+          <div id="left-side-container"></div>
+          <p id="news">Noticias</p>
+          <div id="right-side-container">
+            <a href="/login">modificar noticias</a>
+          </div>
+        </div>
         <NewsCards />
       </div>
       <TwitterTweet />

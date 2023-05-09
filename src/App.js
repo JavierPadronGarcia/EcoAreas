@@ -2,6 +2,7 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 import EcoareasNetwork from './pages/ecoareasNetwork/EcoareasNetwork';
 import Homepage from './pages/homepage/Homepage';
 import Newspage from './pages/newspage/Newspage';
+import Loginpage from './pages/loginpage/Loginpage';
 import './App.css';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Route path="/home" element={<Homepage />} />
         <Route path="/news" element={<Newspage />} />
         <Route path="/network" element={<EcoareasNetwork />} />
+        <Route path="/login" element={<Loginpage />} />
       </Routes>
     </BrowserRouter>
   );

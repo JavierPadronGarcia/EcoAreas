@@ -12,6 +12,7 @@ function NewsSplider() {
     newsContent.getNews().then(data => {
       let allNews = [];
       data.forEach(item => {
+
         allNews.push({
           id: item.val().id,
           img: item.val().img,
@@ -55,6 +56,24 @@ function NewsSplider() {
     getSplider();
   }, []);
 
+  const putDetails = (Object) => {
+
+    // console.log(Object.length);
+    // console.log(Object.part1)
+    //console.log(`${Object.part1}`)
+    console.log();
+
+
+    let completeText = "";
+    for (let index = 0; index < Object.length; index++) {
+      console.log(Object[index])
+      return (<p>{Object[index]}</p>);
+    }
+
+    return completeText;
+
+  }
+
   return (
     <div className="relevant-news">
       <div className="relevant-news-title">
@@ -68,7 +87,9 @@ function NewsSplider() {
         {selectedCards.map((news) => (
           <div key={news.id} className={`button${news.id}`}>
             <h2>{news.text}</h2>
-            <p>{news.details}</p>
+            {
+              putDetails(news.details)
+            }
           </div>
         ))}
         <button onClick={newsContent.scrollBack} id="scollBackButton">volver</button>
@@ -76,5 +97,7 @@ function NewsSplider() {
     </div>
   );
 }
+
+
 
 export default NewsSplider;
