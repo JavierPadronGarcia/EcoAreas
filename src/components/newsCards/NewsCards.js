@@ -31,6 +31,23 @@ function NewsCards() {
     });
   }
 
+  const putInfoInTheForm = (key) => {
+    const form = document.querySelector(".form-container>form");
+
+    newsContent.getOneNew(key).then(item => {
+      let objectDetails = '';
+
+      item.val().details.forEach(paragraph => {
+        objectDetails += paragraph + '\n\n'
+      })
+
+      form.title.value = item.val().text
+      form.textarea.value = objectDetails
+
+      document.getElementsByClassName("form-container")[0].scrollIntoView({ behavior: "smooth" });
+    });
+  }
+
   const showCards = () => {
     return (
       <div className='news-cards'>
@@ -38,10 +55,10 @@ function NewsCards() {
           cards.map((news) => (
             <div>
               <CardForNews ident={news.id} image={news.img} text={news.text} key={news.key} />
-              <button id='deleteButton' onClick={() => removeNew(news.key, news.img)}>eliminar</button>
+              <button id='delete-button' onClick={() => removeNew(news.key, news.img)}>eliminar</button>
+              <button id='update-button' onClick={() => putInfoInTheForm(news.key)}>Actualizar</button>
             </div>
           ))}
-
       </div>
     );
   }

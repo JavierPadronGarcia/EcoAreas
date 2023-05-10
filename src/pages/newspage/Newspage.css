@@ -31,6 +31,10 @@
     margin-left: 0;
 }
 
+#delete-button{
+    display: none;
+}
+
 .Twit {
     display: flex;
     flex-direction: column;

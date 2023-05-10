@@ -10,6 +10,11 @@ const getNews = () => {
   return get(newsRef);
 }
 
+const getOneNew = (key) => {
+  let oneNewRef = ref(db.database, `/News/${key}`);
+  return get(oneNewRef)
+}
+
 const uploadImage = async (image) => {
   let info = [];
   info[1] = v4();
@@ -48,5 +53,6 @@ export default {
   uploadImage,
   addNew,
   removeNew,
-  removeImage
+  removeImage,
+  getOneNew
 };

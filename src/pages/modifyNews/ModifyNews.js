@@ -3,8 +3,10 @@ import Footer from "../../components/footer/Footer";
 import NavigationBar from "../../components/navbar/NavigationBar";
 import NewsCards from "../../components/newsCards/NewsCards";
 import NewsService from "../../services/news.service";
+import "./ModifyNews.css";
 
 function ModifyNews() {
+
 
   const [photo, setPhoto] = useState(null);
 
@@ -32,23 +34,27 @@ function ModifyNews() {
       id = data.size + 1;
       NewsService.addNew(details, id, DownloadURL, title);
     });
-    //gs://ecoareas-3edd0.appspot.com/News
+  }
+
+  const updateNew = (event) => {
+    event.preventDefault();
+    console.log(event.target.parentNode);
   }
 
 
   return (
     <div className="container">
       <NavigationBar />
-      <div>
+      <div className="form-container">
         <form onSubmit={uploadNew}>
           <label for="photo">Imagen: </label>
           <input type="file" id="photo" name="photo" onChange={getPhoto} />
           <label for="title">Titular: </label>
           <input type="text" id="title" name="title" />
           <label for="textarea">Contenido: </label>
-          <textarea name="textarea" rows="10" cols="50" />
-          <button type="submit">Agregar noticia</button>
-          <button type="submit">Actualizar noticia</button>
+          <textarea name="textarea" id="text-area" rows="10" cols="50" />
+          <button id="btn-agregar-noticia" type="submit">Agregar noticia</button>
+          <button id="btn-confirmar-actualizacion" type="button" onClick={updateNew}>Actualizar</button>
         </form>
       </div>
       <NewsCards />
