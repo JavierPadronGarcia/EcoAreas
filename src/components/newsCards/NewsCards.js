@@ -13,6 +13,7 @@ function NewsCards() {
       let allNews = [];
       data.forEach(item => {
         allNews.push({
+          key: item.key,
           id: item.val().id,
           img: item.val().img,
           text: item.val().text,
@@ -23,13 +24,24 @@ function NewsCards() {
     })
   }
 
+  const removeNew = (key, image) => {
+    newsContent.removeNew(key).then(() => {
+      getCards();
+      newsContent.removeImage(image[1]);
+    });
+  }
+
   const showCards = () => {
     return (
       <div className='news-cards'>
         {
           cards.map((news) => (
-            <CardForNews ident={news.id} image={news.img} text={news.text} />
+            <div>
+              <CardForNews ident={news.id} image={news.img} text={news.text} key={news.key} />
+              <button id='deleteButton' onClick={() => removeNew(news.key, news.img)}>eliminar</button>
+            </div>
           ))}
+
       </div>
     );
   }

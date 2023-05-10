@@ -17,19 +17,21 @@ function cardForNews(props) {
 
     document.getElementById("news-details").scrollIntoView({ behavior: 'smooth' });
   }
-  
+
   return (
     <div className='Card-container'>
-        <div key={ident} className='new-card'>
-          <div id='card-image-container'>
-            <img src={image} alt='CardImg' />
-          </div>
-          <div id='card-text-container'>
-            <div id='text-title'>{text}</div>
-            <div id='link-news'><div><button id="link" onClick={showDetails}>Ver detalles</button></div></div>
+      <div key={ident} className='new-card'>
+        <div id='card-image-container'>
+          <img src={image} alt='CardImg' />
+        </div>
+        <div id='card-text-container'>
+          <div id='text-title'>{text}</div>
+          <div id='link-news'>
+            <div><button id="link" onClick={showDetails}>Ver detalles</button></div>
           </div>
         </div>
       </div>
+    </div>
   );
 }
 

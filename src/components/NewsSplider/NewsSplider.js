@@ -15,6 +15,7 @@ function NewsSplider() {
       data.forEach(item => {
 
         allNews.push({
+          key: item.key,
           id: item.val().id,
           img: item.val().img,
           text: item.val().text,
@@ -45,7 +46,7 @@ function NewsSplider() {
         <SplideTrack>
           {selectedCards.map((news) => (
             <SplideSlide className='splide-slide' key={news.id}>
-              <CardForNews className='card-splider' ident={news.id} image={news.img} text={news.text} />
+              <CardForNews className='card-splider' ident={news.id} image={news.img} text={news.text} key={news.key} />
             </SplideSlide>
           ))}
         </SplideTrack>
