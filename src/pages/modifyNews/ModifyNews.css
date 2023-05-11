@@ -4,13 +4,18 @@
     border-bottom: 1px solid black;
     display: flex;
     justify-content: center;
-
     width: 100%;
 }
 
 #btn-confirmar-actualizacion,
 #btn-no-actualizar {
     display: none;
+}
+
+#text-area {
+    resize: vertical;
+    width: 90vw;
+    margin-bottom: 0.5rem;
 }
 
 .form-container form {

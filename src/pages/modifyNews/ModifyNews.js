@@ -35,7 +35,6 @@ function ModifyNews() {
 
   const updateNew = async (event) => {
     event.preventDefault();
-    let text = [];
     let image = [];
     let details = {};
     const form = event.target.parentNode;
@@ -83,15 +82,16 @@ function ModifyNews() {
           <label for="title">Titular: </label>
           <input type="text" id="title" name="title" />
           <label for="textarea">Contenido: </label>
-          <textarea name="textarea" id="text-area" rows="10" cols="50" />
+          <textarea name="textarea" id="text-area" rows={13} />
           <input type="hidden" name="newskey" id="news-key" />
           <input type="hidden" name="imageurl" id="image-url" />
           <input type="hidden" name="imagename" id="image-name" />
           <button id="btn-agregar-noticia" type="submit">Agregar noticia</button>
-          <button id="btn-confirmar-actualizacion" type="button" onClick={updateNew}>Actualizar</button>
-          <button id="btn-no-actualizar" type="button" onClick={noUpdateNew}>No actualizar</button>
+          <button id="btn-confirmar-actualizacion" type="button" onClick={() => { updateNew() }}>Actualizar</button>
+          <button id="btn-no-actualizar" type="button" onClick={() => { noUpdateNew() }}>No actualizar</button>
         </form>
       </div>
+
       <NewsCards />
       <Footer />
     </div>

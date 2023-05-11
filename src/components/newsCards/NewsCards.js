@@ -26,6 +26,7 @@ function NewsCards() {
 
   const removeNew = (key, image) => {
     newsContent.removeNew(key).then(() => {
+      document.getElementById("scollBackButton").style.display = "none";
       getCards();
       newsContent.removeImage(image[1]);
     });
