@@ -22,7 +22,7 @@ const NavigationBar = () => {
       <div className="navbar" id="navbar">
 
         <div className="navbar-brand">
-          <a href="/" className="navbar-logo"><img src="\assets\img\Ilustración_sin_título.png" /></a>
+          <a href="/" className="navbar-logo"><img src="\assets\img\Logo.png" alt="logo" /></a>
         </div>
 
         <div className="button-container">

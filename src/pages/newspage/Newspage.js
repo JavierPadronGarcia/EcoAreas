@@ -5,6 +5,7 @@ import TwitterTweet from "../../components/twitterTweet/TwitterTweet";
 import "./Newspage.css";
 
 function Newspage() {
+
   return (
     <div className="container">
       <NavigationBar />
@@ -16,7 +17,7 @@ function Newspage() {
             <a href="/login" className="login-link">modificar noticias</a>
           </div>
         </div>
-        <NewsCards />
+        <NewsCards/>
       </div>
       <TwitterTweet />
       <Footer />

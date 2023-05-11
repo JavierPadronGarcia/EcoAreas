@@ -1,4 +1,4 @@
-import { ref, get, push, remove } from "firebase/database";
+import { ref, get, push, remove, update } from "firebase/database";
 import { uploadBytes, ref as Sref, getDownloadURL, deleteObject } from "firebase/storage";
 import db from "../firebase";
 import { v4 } from "uuid";
@@ -22,6 +22,16 @@ const uploadImage = async (image) => {
   await uploadBytes(ImageRef, image);
   info[0] = await getDownloadURL(ImageRef);
   return info;
+}
+
+const updateNew = (key, details, img, text) => {
+  const newToUpdateRef = ref(db.database, `/News/${key}`);
+  update(newToUpdateRef, {
+    details: details,
+    id: key,
+    img: img,
+    text: text
+  });
 }
 
 const removeNew = (key) => {
@@ -54,5 +64,6 @@ export default {
   addNew,
   removeNew,
   removeImage,
-  getOneNew
+  getOneNew,
+  updateNew
 };

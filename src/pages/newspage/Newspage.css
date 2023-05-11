@@ -31,7 +31,9 @@
     margin-left: 0;
 }
 
-#delete-button{
+
+.container>.news-section>div>.news-container>.news-cards>div>#delete-button,
+.container>.news-section>div>.news-container>.news-cards>div>#update-button {
     display: none;
 }
 

@@ -32,7 +32,10 @@ function NewsCards() {
   }
 
   const putInfoInTheForm = (key) => {
+    document.getElementById("btn-confirmar-actualizacion").style.display = "block";
     const form = document.querySelector(".form-container>form");
+
+    form.newskey.value = key;
 
     newsContent.getOneNew(key).then(item => {
       let objectDetails = '';
@@ -43,8 +46,12 @@ function NewsCards() {
 
       form.title.value = item.val().text
       form.textarea.value = objectDetails
+      form.imageurl.value = item.val().img[0];
+      form.imagename.value = item.val().img[1];
 
       document.getElementsByClassName("form-container")[0].scrollIntoView({ behavior: "smooth" });
+      document.getElementById("btn-agregar-noticia").style.display = "none";
+      document.getElementById("btn-no-actualizar").style.display = "block";
     });
   }
 
