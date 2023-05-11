@@ -9,6 +9,9 @@ function ModifyNews() {
 
   const [photo, setPhoto] = useState(null);
 
+  //this useState activate the useEffect in the component <NewsCards/> to update the view of the news
+  const [recharge, setRecharge] = useState(false);
+
   const getPhoto = (event) => {
     event.preventDefault();
     setPhoto(event.target.files[0]);
@@ -23,18 +26,17 @@ function ModifyNews() {
 
     details = fillDetails(event.target.textarea.value.split('\n').filter(item => item !== ''));
 
-    console.log(details)
     const DownloadURL = await NewsService.uploadImage(photo);
     //get the size of the inserted news to identify the id and insert the json
     NewsService.getNews().then(data => {
       id = data.size + 1;
       NewsService.addNew(details, id, DownloadURL, title);
       setPhoto(null);
+      setRecharge(!recharge);
     });
   }
 
   const updateNew = async (event) => {
-    event.preventDefault();
     let image = [];
     let details = {};
     const form = event.target.parentNode;
@@ -52,7 +54,9 @@ function ModifyNews() {
 
     details = fillDetails(form.textarea.value.split('\n').filter(item => item !== ''));
 
-    NewsService.updateNew(key, details, image, title);
+    NewsService.updateNew(key, details, image, title)
+    setRecharge(!recharge);
+    resetForm();
   }
 
   const fillDetails = (Text) => {
@@ -65,7 +69,7 @@ function ModifyNews() {
     return DetailItem
   }
 
-  const noUpdateNew = () => {
+  const resetForm = () => {
     document.getElementById("btn-agregar-noticia").style.display = "block";
     document.getElementById("btn-confirmar-actualizacion").style.display = "none";
     document.getElementById("btn-no-actualizar").style.display = "none";
@@ -87,12 +91,12 @@ function ModifyNews() {
           <input type="hidden" name="imageurl" id="image-url" />
           <input type="hidden" name="imagename" id="image-name" />
           <button id="btn-agregar-noticia" type="submit">Agregar noticia</button>
-          <button id="btn-confirmar-actualizacion" type="button" onClick={() => { updateNew() }}>Actualizar</button>
-          <button id="btn-no-actualizar" type="button" onClick={() => { noUpdateNew() }}>No actualizar</button>
+          <button id="btn-confirmar-actualizacion" type="button" onClick={updateNew}>Actualizar</button>
+          <button id="btn-no-actualizar" type="button" onClick={resetForm}>No actualizar</button>
         </form>
       </div>
 
-      <NewsCards />
+      <NewsCards recharge={recharge} />
       <Footer />
     </div>
   );

@@ -4,7 +4,7 @@ import Details from '../details/Details';
 import CardForNews from '../cardsForNews/CardForNews';
 import "./newsCards.css";
 
-function NewsCards() {
+function NewsCards(props) {
 
   const [cards, setCards] = useState([]);
 
@@ -75,6 +75,9 @@ function NewsCards() {
     getCards();
   }, []);
 
+  useEffect(() => {
+    getCards();
+  }, [props.recharge]);
 
   return (
     <div>
