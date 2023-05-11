@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <img src=".\public\assets\img\Logo.webp" alt="Logo">
+    <img src=".\public\assets\img\Logo.png" alt="Logo">
 </div>
 
 <!-- TABLE OF CONTENTS -->

@@ -9,12 +9,12 @@
   background: #4f5aa8;
 }
 
-.navbar-logo {
-  margin-left: 20%;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: #fff;
+.navbar-brand {
+  width: 40%;
+}
+
+.navbar-logo img {
+  width: 60%;
 }
 
 .button-container {
@@ -116,15 +116,30 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
-  .navbar-logo {
-    font-size: 2rem;
+  .navbar-brand {
+    width: 25%;
+  }
+
+  .navbar-logo img {
+    width: 50%;
   }
 
   .navbar-menu {
-    width: 50%;
+    width: 70%;
   }
 
   .navbar-item {
     font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .navbar-brand {
+    width: 15%;
+  }
+
+  .navbar-logo img {
+    width: 60%;
   }
 }
