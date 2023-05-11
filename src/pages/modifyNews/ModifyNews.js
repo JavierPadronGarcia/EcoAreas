@@ -16,19 +16,15 @@ function ModifyNews() {
 
   const uploadNew = async (event) => {
     event.preventDefault();
-    let details = {};
-    let text = [];
     let id = null;
+    let details = {};
 
     let title = event.target.title.value;
-    //divide the textArea if encounters \n and don't take empty lines
-    text = event.target.textarea.value.split('\n').filter(item => item !== '');
 
+    details = fillDetails(event.target.textarea.value.split('\n').filter(item => item !== ''));
+
+    console.log(details)
     const DownloadURL = await NewsService.uploadImage(photo);
-    //fill the details in a json to insert it in the main json
-    text.forEach((element, index) => {
-      details[index] = element
-    });
     //get the size of the inserted news to identify the id and insert the json
     NewsService.getNews().then(data => {
       id = data.size + 1;
@@ -39,9 +35,9 @@ function ModifyNews() {
 
   const updateNew = async (event) => {
     event.preventDefault();
-    let details = {};
     let text = [];
     let image = [];
+    let details = {};
     const form = event.target.parentNode;
 
     let key = form.newskey.value;
@@ -51,18 +47,23 @@ function ModifyNews() {
       image[0] = form.imageurl.value;
       image[1] = form.imagename.value;
     } else {
+      NewsService.removeImage(form.imagename.value);
       image = await NewsService.uploadImage(photo);
     }
 
-    text = form.textarea.value.split('\n').filter(item => item !== '');
-
-    text.forEach((element, index) => {
-      details[index] = element
-    });
-
-    console.log(image);
+    details = fillDetails(form.textarea.value.split('\n').filter(item => item !== ''));
 
     NewsService.updateNew(key, details, image, title);
+  }
+
+  const fillDetails = (Text) => {
+    let DetailItem = {};
+
+    Text.forEach((element, index) => {
+      DetailItem[index] = element
+    });
+
+    return DetailItem
   }
 
   const noUpdateNew = () => {
