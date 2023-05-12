@@ -8,21 +8,16 @@
 .title {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
-#left-side-container,
-#right-side-container,
-#news {
-    width: 30%;
-}
-
-#right-side-container {
+.title>div {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
-#right-side-container>a {
+.modify-link {
     text-decoration: none;
     color: white;
 }
@@ -30,7 +25,6 @@
 .news-section {
     margin-left: 0;
 }
-
 
 .container>.news-section>div>.news-container>.news-cards>div>#delete-button,
 .container>.news-section>div>.news-container>.news-cards>div>#update-button {
@@ -41,9 +35,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    justify-content: center;
+    width: 100vw;
 }
 
 .twitter-tweet {
     width: 90vw !important;
+}
+
+@media only screen and (min-width: 768px) {
+    #link-modify {
+        margin-bottom: 5vw;
+    }
 }

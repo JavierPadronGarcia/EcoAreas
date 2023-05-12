@@ -8,12 +8,15 @@ import "./ModifyNews.css";
 function ModifyNews() {
 
   const [photo, setPhoto] = useState(null);
-
   //this useState activate the useEffect in the component <NewsCards/> to update the view of the news
   const [recharge, setRecharge] = useState(false);
 
   const getPhoto = (event) => {
     event.preventDefault();
+    const fileUploadButton = document.getElementById("file-upload");
+    fileUploadButton.style.backgroundColor = "green";
+    fileUploadButton.style.color = "#c1f880";
+    fileUploadButton.textContent = "Imagen insertada";
     setPhoto(event.target.files[0]);
   }
 
@@ -33,6 +36,7 @@ function ModifyNews() {
       NewsService.addNew(details, id, DownloadURL, title);
       setPhoto(null);
       setRecharge(!recharge);
+      resetForm();
     });
   }
 
@@ -70,29 +74,36 @@ function ModifyNews() {
   }
 
   const resetForm = () => {
-    document.getElementById("btn-agregar-noticia").style.display = "block";
-    document.getElementById("btn-confirmar-actualizacion").style.display = "none";
-    document.getElementById("btn-no-actualizar").style.display = "none";
+    const fileUploadButton = document.getElementById("file-upload");
+    document.getElementById("btn-add-new").style.display = "block";
+    document.getElementById("btn-confirm-update").style.display = "none";
+    document.getElementById("btn-no-update").style.display = "none";
+    fileUploadButton.style.backgroundColor = "blue ";
+    fileUploadButton.style.color = "black";
+    fileUploadButton.textContent = "Inserta una imagen";
     document.querySelector(".form-container>form").reset();
   }
 
   return (
     <div className="container">
+
       <NavigationBar />
       <div className="form-container">
         <form onSubmit={uploadNew}>
-          <label for="photo">Imagen: </label>
-          <input type="file" id="photo" name="photo" onChange={getPhoto} />
-          <label for="title">Titular: </label>
-          <input type="text" id="title" name="title" />
-          <label for="textarea">Contenido: </label>
-          <textarea name="textarea" id="text-area" rows={13} />
+          <div className="image-upload">
+            <label className="file-upload" id="file-upload">
+              <input type="file" id="photo" name="photo" onChange={getPhoto} accept="image/*" />
+              Inserta la imagen
+            </label>
+          </div>
+          <input placeholder="Escribe el titulo aquí" type="text" id="title" name="title" />
+          <textarea placeholder="Escribe el contenido de la noticia aquí" name="textarea" id="text-area" rows={13} />
           <input type="hidden" name="newskey" id="news-key" />
           <input type="hidden" name="imageurl" id="image-url" />
           <input type="hidden" name="imagename" id="image-name" />
-          <button id="btn-agregar-noticia" type="submit">Agregar noticia</button>
-          <button id="btn-confirmar-actualizacion" type="button" onClick={updateNew}>Actualizar</button>
-          <button id="btn-no-actualizar" type="button" onClick={resetForm}>No actualizar</button>
+          <button id="btn-add-new" type="submit">Agregar noticia</button>
+          <button id="btn-confirm-update" type="button" onClick={updateNew}>Actualizar</button>
+          <button id="btn-no-update" type="button" onClick={resetForm}>No actualizar</button>
         </form>
       </div>
 

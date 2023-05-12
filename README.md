@@ -133,6 +133,7 @@ Project Link: [https://github.com/JavierPadronGarcia/EcoAreas.git](https://githu
 * [Font Awesome] -> Free Icons
 * [Flexbox Guide]
 * [Splider] -> easy form to implements an splider
+* [CookiesExample] -> example to how to write cookies policity
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -145,6 +146,7 @@ Project Link: [https://github.com/JavierPadronGarcia/EcoAreas.git](https://githu
 [Visual Studio Code]: https://code.visualstudio.com
 [figma]:https://www.figma.com
 [Splider]: https://splidejs.com
+[CookiesExample]: https://protecciondatos-lopd.com/empresas/politica-de-cookies/#Como_poner_la_politica_de_cookies_en_mi_web
 
 [mobile view]:https://www.figma.com/proto/xKjOHzaoEbItKQAmQmKsKx/Javier-Padr%C3%B3n-Garc%C3%ADa--Dise%C3%B1o-Eco%C3%A1reas?type=design&node-id=1-2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1
 

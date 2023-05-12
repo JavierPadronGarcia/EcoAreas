@@ -11,13 +11,12 @@ function Newspage() {
       <NavigationBar />
       <div className="news-section">
         <div className="title">
-          <div id="left-side-container"></div>
-          <p id="news">Noticias</p>
-          <div id="right-side-container">
-            <a href="/login" className="login-link">modificar noticias</a>
+          <div><p id="news">Noticias</p></div>
+          <div id="link-modify">
+            <a href="/modifyNews" className="modify-link">modificar noticias</a>
           </div>
         </div>
-        <NewsCards/>
+        <NewsCards />
       </div>
       <TwitterTweet />
       <Footer />

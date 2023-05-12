@@ -33,7 +33,7 @@ function NewsCards(props) {
   }
 
   const putInfoInTheForm = (key) => {
-    document.getElementById("btn-confirmar-actualizacion").style.display = "block";
+    document.getElementById("btn-confirm-update").style.display = "block";
     const form = document.querySelector(".form-container>form");
 
     form.newskey.value = key;
@@ -51,8 +51,8 @@ function NewsCards(props) {
       form.imagename.value = item.val().img[1];
 
       document.getElementsByClassName("form-container")[0].scrollIntoView({ behavior: "smooth" });
-      document.getElementById("btn-agregar-noticia").style.display = "none";
-      document.getElementById("btn-no-actualizar").style.display = "block";
+      document.getElementById("btn-add-new").style.display = "none";
+      document.getElementById("btn-no-update").style.display = "block";
     });
   }
 
