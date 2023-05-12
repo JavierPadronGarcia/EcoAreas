@@ -1,10 +1,15 @@
 .form-container {
   margin-bottom: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid black;
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+#form-validator-message {
+  display: none;
+  text-align: center;
+  color: rgb(154, 3, 3);
 }
 
 .image-select {
@@ -124,14 +129,13 @@
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
 }
 
-
 #btn-add-new {
   display: flex;
   align-items: center;
   font-family: inherit;
   font-weight: 500;
   font-size: 15px;
-  padding: 0.7em 1.4em 0.7em 1.1em;
+  padding: 0.7em 1.1em 0.7em 1.1em;
   color: white;
   background: #ad5389;
   background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, rgba(102, 247, 113, 1) 100%);
@@ -143,6 +147,57 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+}
+
+#btn-confirm-update {
+  display: none;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 0.7em 1.1em 0.7em 1.1em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, rgba(102, 247, 113, 1) 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#btn-no-update {
+  display: none;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 0.7em 1.1em 0.7em 1.1em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(0deg, rgb(167, 52, 20) 0%, rgb(247, 211, 102) 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.on-update-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+#btn-confirm-update,
+#btn-no-update {
+  width: 45vw;
 }
 
 #delete-button,
@@ -196,28 +251,28 @@
   #title {
     margin-top: 1em;
   }
+
+  #photo {
+    height: 2.5em;
+  }
+
+  .on-update-buttons {
+    gap: 4em;
+  }
+
+  #btn-confirm-update,
+  #btn-no-update {
+    width: 30vw;
+  }
 }
 
-/*
-@media only screen and (min-width: 600px) {
-
-  .image-select-container {
-    margin-top: 1rem;
+@media only screen and (min-width: 1024px) {
+  .on-update-buttons {
+    gap: 8em;
   }
 
-  .image-select {
-    height: 100%;
+  #btn-confirm-update,
+  #btn-no-update {
+    width: 15vw;
   }
-
-  .image-select::before {
-    top: 15%;
-    height: 2rem;
-    width: 100%;
-    align-items: center;
-  }
-
-  #delete-button,
-  #update-button {
-    font-size: 1.2em;
-  }
-}*/
+}

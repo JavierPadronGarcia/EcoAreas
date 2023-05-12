@@ -3,8 +3,6 @@ import Footer from "../../components/footer/Footer";
 import NavigationBar from "../../components/navbar/NavigationBar";
 import NewsCards from "../../components/newsCards/NewsCards";
 import NewsService from "../../services/news.service";
-import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./ModifyNews.css";
 
 function ModifyNews() {
@@ -22,29 +20,46 @@ function ModifyNews() {
   }
 
   const uploadNew = async (event) => {
+    const validatorMessage = document.getElementById("form-validator-message");
     event.preventDefault();
     let id = null;
     let details = {};
+    if (event.target.title.value === ""
+      || event.target.textarea.value === ""
+      || photo == null) {
+      validatorMessage.style.display = "block";
+    } else {
+      validatorMessage.style.display = "none";
+      let title = event.target.title.value;
 
-    let title = event.target.title.value;
+      details = fillDetails(event.target.textarea.value.split('\n').filter(item => item !== ''));
 
-    details = fillDetails(event.target.textarea.value.split('\n').filter(item => item !== ''));
-
-    const DownloadURL = await NewsService.uploadImage(photo);
-    //get the size of the inserted news to identify the id and insert the json
-    NewsService.getNews().then(data => {
-      id = data.size + 1;
-      NewsService.addNew(details, id, DownloadURL, title);
-      setPhoto(null);
-      setRecharge(!recharge);
-      resetForm();
-    });
+      const DownloadURL = await NewsService.uploadImage(photo);
+      //get the size of the inserted news to identify the id and insert the json
+      NewsService.getNews().then(data => {
+        id = data.size + 1;
+        NewsService.addNew(details, id, DownloadURL, title);
+        setPhoto(null);
+        setRecharge(!recharge);
+        resetForm();
+        //show de message
+        validatorMessage.innerHTML = `Noticia Agregada Correctamente`;
+        validatorMessage.style.color = "green";
+        validatorMessage.style.display = "block";
+        setTimeout(() => {
+          //hide and reset de message
+          validatorMessage.style.display = "none";
+          validatorMessage.innerHTML = `No puede haber ningún campo vacío`;
+          validatorMessage.style.color = "rgb(154, 3, 3)";
+        }, 3000);
+      });
+    }
   }
 
   const updateNew = async (event) => {
     let image = [];
     let details = {};
-    const form = event.target.parentNode;
+    const form = event.target.parentNode.parentNode;
 
     let key = form.newskey.value;
     let title = form.title.value;
@@ -84,8 +99,8 @@ function ModifyNews() {
 
   return (
     <div className="container">
-
       <NavigationBar />
+      <p id="form-validator-message">No puede haber ningún campo vacío</p>
       <div className="form-container">
         <form onSubmit={uploadNew}>
           <div className="image-select-container">
@@ -102,8 +117,10 @@ function ModifyNews() {
             <input type="hidden" name="imagename" id="image-name" />
             <button id="btn-add-new" type="submit">Agregar noticia</button>
           </div>
-          <button id="btn-confirm-update" type="button" onClick={updateNew}><FontAwesomeIcon icon={faTrashCan} id="link-icon" /></button>
-          <button id="btn-no-update" type="button" onClick={resetForm}>No actualizar</button>
+          <div className="on-update-buttons">
+            <button id="btn-confirm-update" type="button" onClick={updateNew}>Actualizar</button>
+            <button id="btn-no-update" type="button" onClick={resetForm}>No actualizar</button>
+          </div>
         </form>
       </div>
 

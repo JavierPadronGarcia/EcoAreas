@@ -28,6 +28,7 @@ function NewsCards(props) {
   }
 
   const removeNew = (key, image) => {
+    document.getElementById("form-validator-message").style.display = "none";
     newsContent.removeNew(key).then(() => {
       document.getElementById("scollBackButton").style.display = "none";
       getCards();
@@ -37,6 +38,7 @@ function NewsCards(props) {
 
   const putInfoInTheForm = (key) => {
     document.getElementById("btn-confirm-update").style.display = "block";
+    document.getElementById("form-validator-message").style.display = "none";
     const form = document.querySelector(".form-container>form");
 
     form.newskey.value = key;
