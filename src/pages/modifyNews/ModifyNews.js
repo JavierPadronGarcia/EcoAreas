@@ -3,6 +3,8 @@ import Footer from "../../components/footer/Footer";
 import NavigationBar from "../../components/navbar/NavigationBar";
 import NewsCards from "../../components/newsCards/NewsCards";
 import NewsService from "../../services/news.service";
+import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./ModifyNews.css";
 
 function ModifyNews() {
@@ -13,11 +15,10 @@ function ModifyNews() {
 
   const getPhoto = (event) => {
     event.preventDefault();
-    const fileUploadButton = document.getElementById("file-upload");
-    fileUploadButton.style.backgroundColor = "green";
-    fileUploadButton.style.color = "#c1f880";
-    fileUploadButton.textContent = "Imagen insertada";
     setPhoto(event.target.files[0]);
+    if (event.target.files[0] != null) {
+      document.getElementById("image-name-preview").innerHTML = `imagen seleccionada: </br> ${event.target.files[0].name}`;
+    }
   }
 
   const uploadNew = async (event) => {
@@ -74,13 +75,10 @@ function ModifyNews() {
   }
 
   const resetForm = () => {
-    const fileUploadButton = document.getElementById("file-upload");
     document.getElementById("btn-add-new").style.display = "block";
     document.getElementById("btn-confirm-update").style.display = "none";
     document.getElementById("btn-no-update").style.display = "none";
-    fileUploadButton.style.backgroundColor = "blue ";
-    fileUploadButton.style.color = "black";
-    fileUploadButton.textContent = "Inserta una imagen";
+    document.getElementById("image-name-preview").innerHTML = ``;
     document.querySelector(".form-container>form").reset();
   }
 
@@ -90,19 +88,21 @@ function ModifyNews() {
       <NavigationBar />
       <div className="form-container">
         <form onSubmit={uploadNew}>
-          <div className="image-upload">
-            <label className="file-upload" id="file-upload">
+          <div className="image-select-container">
+            <div className="image-select">
               <input type="file" id="photo" name="photo" onChange={getPhoto} accept="image/*" />
-              Inserta la imagen
-            </label>
+            </div>
+            <p id="image-name-preview"></p>
           </div>
-          <input placeholder="Escribe el titulo aquí" type="text" id="title" name="title" />
-          <textarea placeholder="Escribe el contenido de la noticia aquí" name="textarea" id="text-area" rows={13} />
-          <input type="hidden" name="newskey" id="news-key" />
-          <input type="hidden" name="imageurl" id="image-url" />
-          <input type="hidden" name="imagename" id="image-name" />
-          <button id="btn-add-new" type="submit">Agregar noticia</button>
-          <button id="btn-confirm-update" type="button" onClick={updateNew}>Actualizar</button>
+          <div className="form-inputs">
+            <input placeholder="Escribe el titulo aquí" type="text" id="title" name="title" />
+            <textarea placeholder="Escribe el contenido de la noticia aquí" name="textarea" id="text-area" rows={13} />
+            <input type="hidden" name="newskey" id="news-key" />
+            <input type="hidden" name="imageurl" id="image-url" />
+            <input type="hidden" name="imagename" id="image-name" />
+            <button id="btn-add-new" type="submit">Agregar noticia</button>
+          </div>
+          <button id="btn-confirm-update" type="button" onClick={updateNew}><FontAwesomeIcon icon={faTrashCan} id="link-icon" /></button>
           <button id="btn-no-update" type="button" onClick={resetForm}>No actualizar</button>
         </form>
       </div>

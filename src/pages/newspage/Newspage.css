@@ -26,8 +26,8 @@
     margin-left: 0;
 }
 
-.container>.news-section>div>.news-container>.news-cards>div>#delete-button,
-.container>.news-section>div>.news-container>.news-cards>div>#update-button {
+.news-section #delete-button,
+.news-section #update-button {
     display: none;
 }
 

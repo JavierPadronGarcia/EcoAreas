@@ -7,16 +7,45 @@
     width: 100%;
 }
 
-input[type="file"] {
-    display: none;
+.image-select {
+    position: relative;
+    display: flex;
+    width: 60vw;
 }
 
-.file-upload {
-    border: 1px solid #ccc;
+.image-select::before {
+    background-color: green;
+    color: white;
     display: flex;
-    padding: 6px 12px;
-    cursor: pointer;
-    width: fit-content;
+    justify-content: center;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    white-space: nowrap;
+    content: var(--fn);
+}
+
+.image-select-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.image-select input[type="file"] {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+:root {
+    --fn: 'Seleccionar archivo';
+}
+
+#image-name-preview {
+    text-align: center;
 }
 
 #btn-confirm-update,
@@ -33,4 +62,31 @@ input[type="file"] {
 .form-container form {
     display: flex;
     flex-direction: column;
+}
+
+#title,
+#text-area {
+    width: 90vw;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#delete-button,
+#update-button {
+    background-color: #c1f880;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    border-radius: 35%;
+    padding: 1% 2% 1% 2%;
 }

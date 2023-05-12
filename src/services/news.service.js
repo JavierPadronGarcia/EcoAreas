@@ -55,6 +55,8 @@ const addNew = (details, id, img, text) => {
 
 const scrollBack = () => {
   document.getElementsByClassName("news-container")[0].parentNode.scrollIntoView({ behavior: "smooth" });
+  document.querySelectorAll('#news-details>div').forEach((item) => { item.style.display = "none"; });
+  document.getElementById("scollBackButton").style.display = "none";
 }
 
 export default {

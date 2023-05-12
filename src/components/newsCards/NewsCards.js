@@ -2,7 +2,10 @@ import React, { useState, useEffect } from 'react';
 import newsContent from '../../services/news.service';
 import Details from '../details/Details';
 import CardForNews from '../cardsForNews/CardForNews';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPencil, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import "./newsCards.css";
+
 
 function NewsCards(props) {
 
@@ -50,6 +53,7 @@ function NewsCards(props) {
       form.imageurl.value = item.val().img[0];
       form.imagename.value = item.val().img[1];
 
+      document.getElementById("image-name-preview").innerHTML = `Si no selecciona una imagen, se usará la misma que ya está`;
       document.getElementsByClassName("form-container")[0].scrollIntoView({ behavior: "smooth" });
       document.getElementById("btn-add-new").style.display = "none";
       document.getElementById("btn-no-update").style.display = "block";
@@ -63,8 +67,10 @@ function NewsCards(props) {
           cards.map((news) => (
             <div>
               <CardForNews ident={news.id} image={news.img} text={news.text} key={news.key} />
-              <button id='delete-button' onClick={() => removeNew(news.key, news.img)}>eliminar</button>
-              <button id='update-button' onClick={() => putInfoInTheForm(news.key)}>Actualizar</button>
+              <div className='buttons-container'>
+                <button id='delete-button' onClick={() => removeNew(news.key, news.img)}><FontAwesomeIcon icon={faTrashCan} id='delete-icon' /></button>
+                <button id='update-button' onClick={() => putInfoInTheForm(news.key)}><FontAwesomeIcon icon={faPencil} id='update-icon' /></button>
+              </div>
             </div>
           ))}
       </div>
