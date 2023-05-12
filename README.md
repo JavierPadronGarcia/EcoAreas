@@ -84,7 +84,7 @@ If you don't have node js <a href='https://nodejs.org/en'>click here</a> to inst
    npm install
    ```
 
-3. Once you have done this, to start the project use in the project folder
+3. Once you have done this, to start the project
     ```sh
     npm start
     ```
@@ -95,7 +95,7 @@ If you don't have node js <a href='https://nodejs.org/en'>click here</a> to inst
 ## Roadmap
 - [ ] Add a page for each news
 - [ ] Multi-language Support
-    - [ x ] Spanish
+    - [x] Spanish
     - [ ] English
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
