@@ -1,0 +1,165 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+
+  <channel>
+    <title><![CDATA[ Ecoáreas]]></title>
+    <description><![CDATA[ Una iniciativa canaria, innovadora y pionera para dinamizar las zonas costeras de interés ecoturístico. ]]></description>
+    <link>http://localhost:3000/news</link>
+    <generator>RSS for Node</generator>
+    <lastBuildDate>Sat, 13 May 2023 20:00:00 GMT</lastBuildDate>
+    <atom:link href="localhost:3000/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>
+        <![CDATA[ Organizamos una jornada de sensibilización y limpieza en la Playa de Los Cancajos ]]>
+      </title>
+      <description>
+        <![CDATA[ Hemos llevado a cabo durante este sábado, 15 de abril, una acción de limpieza de playas y sensibilización medioambiental en la Playa de Los Cancajos ... ]]>
+      </description>
+      <link>http://localhost:3000/news</link>
+      <guid isPermaLink="false">643d38b1967bd0809358cfdd</guid>
+      <pubDate>Mon, 17 Apr 2023 12:36:11 GMT</pubDate>
+      <enclosure url='https://firebasestorage.googleapis.com/v0/b/ecoareas-3edd0.appspot.com/o/News%2FNoticia-1.png?alt=media' length="0" type="image/png" />
+      <dc:creator>Ecoáreas</dc:creator>
+      <content:encoded>
+        <![CDATA[<p>Hemos llevado a cabo durante este sábado, 15 de abril, una acción de limpieza de playas y sensibilización medioambiental 
+        en la Playa de Los Cancajos, en el municipio de Breña Baja, en La Palma. Un total de 40 personas han participado en la jornada, desarrollada el sábado, 
+        en la que se han retirado 160 kilos de residuos.</p><p>La iniciativa, impulsada por la Ecoárea de Los Cancajos, en el marco del programa ‘Por un litoral limpio’, 
+        forma parte del proyecto de economía azul Ecoáreas Mardetodos, desarrollado por la Consejería de Turismo, Industria y Comercio del Gobierno de Canarias. 
+        La acción de limpieza, que contó con la colaboración del Ayuntamiento de Breña Baja, la Asociación contra el Cáncer de La Palma y la empresa Precious Plastic Canarias, 
+        ha permitido recoger unas 500 colillas en el espacio de litoral.</p><p>Por su parte, la Asociación contra el Cáncer de La Palma, ha impartido una charla de 
+        sensibilización sobre el tabaco y los problemas que genera tanto para la salud como para el medioambiente.</p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>
+        <![CDATA[ Ecoáreas conciencia sobre la contaminación lumínica en La Gomera con una actividad de observación ]]>
+      </title>
+      <description>
+        <![CDATA[ Tras la buena acogida de la iniciativa de Ecoáreas Mardetodos en la playa de La Laja, en Gran Canaria, el proyecto ... ]]>
+      </description>
+      <link>http://localhost:3000/news</link>
+      <guid isPermaLink="false">64353767bb1c2aa17f7563be</guid>
+      <pubDate>Tue, 11 Apr 2023 10:38:25 GMT</pubDate>
+      <enclosure url='https://firebasestorage.googleapis.com/v0/b/ecoareas-3edd0.appspot.com/o/News%2FNoticia-2.png?alt=media' length="0" type="image/png" />
+      <dc:creator>Ecoáreas</dc:creator>
+      <content:encoded>
+        <![CDATA[<p>Tras la buena acogida de la iniciativa de Ecoáreas Mardetodos en la playa de La Laja, en Gran Canaria, el proyecto de participación ciudadana ha organizado 
+        una nueva actividad de observación astronómica con explicaciones sobre las constelaciones y cuerpos celestes en la Ecoárea de Playa Santiago- Playa Tapahuga, 
+        en La Gomera.</p><p>La actividad, impulsada por la Consejería de Turismo, Industria y Comercio del Gobierno de Canarias, a través del proyecto de economía azul, 
+        se ha realizado en Playa de Santiago este sábado, 15 de abril.</p><p>Durante la jornada se ha observado el sistema solar, las estrellas y las constelaciones. Además, 
+        la iniciativa apuesta por concienciar sobre la contaminación lumínica y sus consecuencias medioambientales. Los monitores, con certificación Starlight de la empresa 
+        herreña Esmiras Global Events, se encargarán de explicar la importancia de respetar, cuidar y proteger el ‘recurso cielo’ para uso y disfrute de vecinos y vecinas, 
+        turistas y visitantes, así como de toda persona con una sensibilidad especial para su observación.</p><p>Con la realización de este tipo de actividades divulgativas 
+        se busca sensibilizar sobre la contaminación lumínica que está impidiendo visualizar los cuerpos celestes en nuestros cielos, provocando el deterioro de un legado 
+        con profundas repercusiones culturales, científicas, medioambientales y estéticas.</p><p>De ahí que esta actividad busca poner en valor la calidad de Canarias para 
+        la observación del cielo nocturno y promover actividades para impulsar su reconocimiento.</p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>
+        <![CDATA[ Las Playitas de Fuerteventura se suma a la Red de Áreas Ecoturísticas de Canarias ]]>
+      </title>
+      <description>
+        <![CDATA[ La Ecoárea de Las Playitas, en el municipio de Tuineje, en Fuerteventura, se ha convertido en la séptima, de las 16 diagnosticadas en el Archipiélago, en firmar el ... ]]>
+      </description>
+      <link>http://localhost:3000/news</link>
+      <guid isPermaLink="false">63a483a6bb686461cbe881b3</guid>
+      <pubDate>Thu, 22 Dec 2022 16:21:21 GMT</pubDate>
+      <enclosure url='https://firebasestorage.googleapis.com/v0/b/ecoareas-3edd0.appspot.com/o/News%2FNoticia-3.png?alt=media' length="0" type="image/png" />
+      <dc:creator>Ecoáreas</dc:creator>
+      <content:encoded>
+        <![CDATA[<p>La Ecoárea de Las Playitas, en el municipio de Tuineje, en Fuerteventura, se ha convertido en la séptima, de las 16 diagnosticadas en el Archipiélago, en firmar el 
+        manifiesto de adhesión a la Red de Áreas Ecoturísticas de Canarias del proyecto Ecoáreas Mardetodos.</p><p>Este proyecto de participación ciudadana, impulsado por la 
+        Consejería de Turismo, Industria y Comercio del Gobierno de Canarias, tiene como objetivo el reconocimiento de estas zonas del litoral como espacios de interés ecoturístico. 
+        Además, busca promover su preservación y desarrollo sostenible a través de buenas prácticas relacionadas con la convivencia, la participación sociocultural y los valores 
+        medioambientales.</p><p>Tras concluir el diagnóstico este verano y la creación del plan de acción por el Grupo Motor de la Ecoárea de Las Playitas a finales de noviembre 
+        y habiendo particiapdo vecinos y entidades locales en dicho proceso, éste ha sido presentado al Cabildo de Fuerteventura, al Ayuntamiento de Tuineje y la Reserva de la 
+        BIosfera de la Isla.</p><p>El director general de Ordenación y Promoción Turística del Gobierno de Canarias, Ciprián Rivas, ha explicado que “la adhesión al proyecto 
+        de la Ecoárea de Las Playitas es un importante hito para impulsar la participación de las personas que residen en la zona, comercios, empresas y agentes sociales en 
+        la puesta en marcha de iniciativas a favor de un turismo sostenible y de calidad, basado en la conservación del patrimonio natural y cultural de esta importante zona 
+        de tradición pesquera en el litoral majorero”.</p><p>Además, Rivas recordó que es la primera en firmar su adhesión de las dos diagnosticadas en la isla de Fuerteventura 
+        y que continúan trabajando para que en los próximos meses se firmen el resto de Ecoáreas del proyecto.</p><p>Entre los valores que hacen que Las Playitas sea una ecoárea
+        destaca la presencia del Monumento Nacional Cuchillos de Vigán, de gran interés para la comunidad científica. También, la propia playa de Las Playitas compuesta por 
+        arenas finas de color oscuro transportadas por los barrancos y un fondo matino de gran interés por su biodiversidad en flora y fauna única.</p><p>Asimismo, en sus cercanías 
+        se encuentra el faro de la Entallada, de gran valor patrimonial construido en 1953 y recién rehabilitado para acoger un museo.</p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>
+        <![CDATA[ Ecoáreas Mardetodos lleva a cabo en El Hierro y La Gomera iniciativas para preservar el litoral ]]>
+      </title>
+      <description>
+        <![CDATA[ Ecoáreas Mardetodos ha llevado a cabo este fin de semana acciones en El Hierro y La Gomera para sensibilizar e implicar a los vecinos y vecinas en la dinamización y ... ]]>
+      </description>
+      <link>http://localhost:3000/news</link>
+      <guid isPermaLink="false">64182c6660553d0a278912d9</guid>
+      <pubDate>Mon, 20 Mar 2023 10:04:32 GMT</pubDate>
+      <enclosure url='https://firebasestorage.googleapis.com/v0/b/ecoareas-3edd0.appspot.com/o/News%2FNoticia-4.png?alt=media' length="0" type="image/png" />
+      <dc:creator>Ecoáreas</dc:creator>
+      <content:encoded>
+        <![CDATA[<p>Ecoáreas Mardetodos ha llevado a cabo este fin de semana acciones en El Hierro y La Gomera para sensibilizar e implicar a los vecinos y vecinas en la dinamización y 
+        desarrollo sostenible del litoral. El proyecto, impulsado por la Consejería de Turismo, Industria y Comercio del Gobierno de Canarias, tiene como objetivo promover la 
+        participación social en el desarrollo de prácticas turísticas que, además de servir a la preservación de las costas, contribuyan al desarrollo económico y social respetuoso 
+        con el medioambiente.</p><p>Casi un centenar de personas participaron en las actividades organizadas por los grupos motores de estas islas durante el fin de semana. Concretamente, 
+        en las Ecoáreas de Las Puntas y La Caleta, en El Hierro, han tenido lugar unas Jornadas de Turismo Activo con el objetivo de dar a conocer y poner en valor las propuestas ecoturísticas 
+        que se realizan en la Isla sin dañar el litoral. En total se organizaron una decena de actividades como escalada, parapente, senderismo, buceo y observación de estrellas, entre otras.</p>
+        <p>Por su parte, en el municipio de Alajeró en La Gomera, en Playa de Santiago, se ha llevado a cabo una charla sobre la problemática del plástico y una acción de limpieza, con la 
+        colaboración de personas voluntarias de la zona. En concreto los voluntarios y voluntarias se han centrado en la recolección de microplásticos, para reciclarlos posteriormente en un 
+        taller para crear maceteros.</p><p>El desarrollo de estas jornadas ha sido posible gracias al enorme trabajo de los técnicos y voluntarios de las Ecoáreas de El Hierro y La Gomera, 
+        con el objetivo de que vecinos y visitantes puedan conocer un poco más y disfrutar de nuestro litoral de forma respetuosa y sostenible.</p><p>Además, debido a la buena acogida y participación,
+        desde el proyecto Ecoáreas Mardetodos se trabaja ya en realizar estas jornadas en otras islas para visibilizar las posibilidades que ofrece el turismo activo en nuestro Archipiélago.</p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>
+        <![CDATA[ Ecoáreas promueve el astroturismo con una actividad de observación de estrellas en La Laja ]]>
+      </title>
+      <description>
+        <![CDATA[ La actividad, impulsada por la Consejería de Turismo, Industria y Comercio del Gobierno de Canarias a través del proyecto de economía azul, ha tenido lugar en ... ]]>
+      </description>
+      <link>http://localhost:3000/news</link>
+      <guid isPermaLink="false">6421a8144e1f6177ce85ae9d</guid>
+      <pubDate>Mon, 27 Mar 2023 14:31:24 GMT</pubDate>
+      <enclosure url='https://firebasestorage.googleapis.com/v0/b/ecoareas-3edd0.appspot.com/o/News%2FNoticia-5.png?alt=media' length="0" type="image/png" />
+      <dc:creator>Ecoáreas</dc:creator>
+      <content:encoded>
+        <![CDATA[<p>La actividad, impulsada por la Consejería de Turismo, Industria y Comercio del Gobierno de Canarias a través del proyecto de economía azul, ha tenido lugar en la Ecoárea 
+        San Cristóbal– Hoya de La Plata – Playa de La Laja, con el objetivo de poner en valor el astroturismo, al tiempo que se promueve la preservación de las zonas costeras y su 
+        desarrollo social y económico respetuoso con el medioambiente.</p><p>Durante la observación astronómica, las personas asistentes pudieron conocer curiosidades sobre las 
+        constelaciones y cuerpos celestes de la mano de monitores con certificación Starlight de ‘Esmiras Global Events’.</p><p>El director general de Ordenación y Promoción Turística, 
+        Ciprián Rivas, ha destacado “la importancia de realizar actividades divulgativas como esta para concienciar sobre la contaminación lumínica que está borrando las estrellas de 
+        nuestros cielos, provocando el deterioro de un legado con profundas repercusiones culturales, científicas, medioambientales y estéticas. Es por eso que está actividad, promovida 
+        por Ecoáreas Mardetodos, busca poner en valor la calidad de Canarias para la observación del cielo nocturno y promover actividades para impulsar su reconocimiento”.</p>]]>
+      </content:encoded>
+    </item>
+    <item>
+      <title>
+        <![CDATA[ Ecoáreas Mardetodos presenta el plan de acción del proyecto palmero de Los Cancajos ]]>
+      </title>
+      <description>
+        <![CDATA[ Ecoáreas Mardetodos reúne el próximo lunes, 19 de diciembre, a instituciones, organizaciones, empresas de la zona y residentes en el municipio de ... ]]>
+      </description>
+      <link>http://localhost:3000/news</link>
+      <guid isPermaLink="false">639c98e82fe82e7eef312682</guid>
+      <pubDate>Fri, 16 Dec 2022 16:15:30 GMT</pubDate>
+      <enclosure url='https://firebasestorage.googleapis.com/v0/b/ecoareas-3edd0.appspot.com/o/News%2FNoticia-6.png?alt=media' length="0" type="image/png" />
+      <dc:creator>Ecoáreas</dc:creator>
+      <content:encoded>
+        <![CDATA[<p>Ecoáreas Mardetodos reúne el próximo lunes, 19 de diciembre, a instituciones, organizaciones, empresas de la zona y residentes en el municipio de Breña Baja, en La Palma, 
+        para presentar los objetivos y plan de actividades de la Ecoárea de Los Cancajos.</p><p>El encuentro, tendrá lugar en las salinas de Los Cancajos a partir de las 15.30 horas, 
+        con la finalidad de dar visibilidad al trabajo de los grupos motores, la alianza creada con los distintos agentes e instituciones locales y favorecer la implicación de más 
+        empresas y comercios de Los Cancajos en el desarrollo de esta iniciativa de turismo sostenible.</p><p>El proyecto Ecoáreas Mardetodos impulsado por la Consejería de Turismo, 
+        Industria y Comercio del Gobierno de Canarias tiene como objetivo el reconocimiento de estas zonas del litoral como espacios de interés ecoturístico, así como su preservación 
+        y desarrollo sostenible a través de buenas prácticas relacionadas con la convivencia, la participación sociocultural y los valores medioambientales.</p><p>El evento contará 
+        con la participación de representantes del Ayuntamiento de Breña Baja, Reserva de la Biosfera y Marina, Oficinas verdes y de Turismo, TRAGSA y Gesplan, hoteles, empresas de 
+        turismo activo y el grupo motor de Los Cancajos, que lidera la dinamización de esta ecoárea.</p><p>La Ecoárea de Los Cancajos se convirtió el pasado mes de noviembre en la 
+        sexta, de las 16 diagnosticadas en el Archipiélago, en firmar el manifiesto de adhesión a la Red de Áreas Turísticas de Canarias, que se enmarca en el proyecto Ecoáreas 
+        Mardetodos.</p><p>El director general de Ordenación y Promoción Turística, Ciprián Rivas, agradece la gran implicación del grupo motor conformado por vecinos de la zona, 
+        la Cofradía Santa Cruz, la Escuela de Voley Playa Aurita Viva, Buceo Sub La Palma, el Club de Actividades Subacuáticas La Barqueta, Centro de Buceo Isla Bonita, Asociación 
+        Juventud La Colmena, Asociación El Aljibe, Asociación El Telar, Ad Astra, Astro La Palma y el Hotel Hacienda San Jorge.</p><p>Además, desde Ecoáreas Mardetodos animan a 
+        unirse al grupo motor para participar en el plan de acción y cuidar del litoral de La Palma contactando a través del correo ecoareaslapalma@gmail.com.</p>]]>
+      </content:encoded>
+    </item>
+  </channel>
+</rss>

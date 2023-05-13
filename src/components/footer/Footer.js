@@ -30,7 +30,7 @@ function Footer() {
             <a href="https://github.com/JavierPadronGarcia/EcoAreas"><FontAwesomeIcon icon={faGithub} id="link-icon" /></a>
           </div>
           <div id="link-icon-container">
-            <a href="https://www.ecoareasmardetodos.org/blog-feed.xml"><FontAwesomeIcon icon={faWifi} id="link-icon" /></a>
+            <a href="\assets\rss.xml"><FontAwesomeIcon icon={faWifi} id="link-icon" /></a>
           </div>
         </div >
       </div>

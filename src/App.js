@@ -6,7 +6,6 @@ import ModifyNews from "./pages/modifyNews/ModifyNews";
 import PoliticsPage from "./pages/politicsPage/PoliticsPage";
 import './App.css';
 
-
 function App() {
   return (
     <BrowserRouter>
