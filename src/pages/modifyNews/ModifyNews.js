@@ -6,7 +6,6 @@ import NewsService from "../../services/news.service";
 import "./ModifyNews.css";
 
 function ModifyNews() {
-
   const [photo, setPhoto] = useState(null);
   //this useState activate the useEffect in the component <NewsCards/> to update the view of the news
   const [recharge, setRecharge] = useState(false);

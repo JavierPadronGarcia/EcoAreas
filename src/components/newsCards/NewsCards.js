@@ -68,7 +68,7 @@ function NewsCards(props) {
         {
           cards.map((news) => (
             <div>
-              <CardForNews ident={news.id} image={news.img} text={news.text} key={news.key} />
+              <CardForNews ident={news.key} image={news.img} text={news.text} key={news.key} />
               <div className='buttons-container'>
                 <button id='delete-button' onClick={() => removeNew(news.key, news.img)}><FontAwesomeIcon icon={faTrashCan} id='delete-icon' /></button>
                 <button id='update-button' onClick={() => putInfoInTheForm(news.key)}><FontAwesomeIcon icon={faPencil} id='update-icon' /></button>
