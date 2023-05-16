@@ -64,7 +64,7 @@ function NewsCards(props) {
       <div className='news-cards'>
         {
           cards.map((news) => (
-            <div>
+            <div className='modify-card'>
               <CardForNews ident={news.key} image={news.img} text={news.text} key={news.key} />
               <div className='buttons-container'>
                 <button id='delete-button' onClick={() => removeNew(news.key, news.img)}><FontAwesomeIcon icon={faTrashCan} id='delete-icon' /></button>

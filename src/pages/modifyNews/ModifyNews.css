@@ -202,7 +202,6 @@
 
 #delete-button,
 #update-button {
-  margin-top: 0.3em;
   display: flex;
   font-size: 15px;
   padding: 0.6em;
@@ -229,6 +228,10 @@
 
 .main-footer {
   margin-top: 1em;
+}
+
+.modify-card>.Card-container {
+  margin-bottom: 0.2rem;
 }
 
 @media only screen and (min-width: 600px) {
