@@ -28,7 +28,6 @@ function NewsCards(props) {
   const removeNew = (key, image) => {
     document.getElementById("form-validator-message").style.display = "none";
     newsContent.removeNew(key).then(() => {
-      document.getElementById("scollBackButton").style.display = "none";
       getCards();
       newsContent.removeImage(image[1]);
     });

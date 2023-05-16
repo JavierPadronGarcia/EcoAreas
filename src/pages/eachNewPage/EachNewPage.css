@@ -1,5 +1,21 @@
 .aside-content {
     display: none;
+    width: 100%;
+    overflow-y: auto;
+    max-height: 100vw;
+    border-radius: 20px;
+}
+
+.aside-container {
+    display: none;
+    flex-direction: column;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
 }
 
 .new-content {
@@ -62,25 +78,24 @@
 @media only screen and (min-width: 1200px) {
 
     .main-container {
+        flex-direction: row;
+        align-items: normal;
+    }
+
+    .title-container {
+        width: 85%;
+    }
+
+    .aside-container {
         display: flex;
-        width: 100vw;
     }
 
     .aside-content {
         display: flex;
-        width: 100%;
-        overflow-y: auto;
-        overflow-x: hidden;
-        max-height: 100vh;
-        border: 1px solid red;
-    }
-
-    .buttons-container {
-        display: none;
     }
 
     .new-content {
-        width: 70vw;
+        width: 70%;
     }
 
     .img-container,
@@ -101,14 +116,8 @@
     }
 }
 
-
 @media only screen and (min-width: 1800px) {
-
     .img-container {
         width: 40vw;
-    }
-
-    .details {
-        margin-top: 2%;
     }
 }

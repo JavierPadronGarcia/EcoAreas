@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import AsideCardsForNews from "../../components/asideCardsForNews/AsideCardsForNews";
 import NavigationBar from "../../components/navbar/NavigationBar";
 import Details from "../../components/details/Details";
 import newsService from "../../services/news.service";
 import Footer from "../../components/footer/Footer";
-import NewsCards from "../../components/newsCards/NewsCards";
 import "./EachNewPage.css";
 
 function EachNewPage() {
@@ -53,18 +53,18 @@ function EachNewPage() {
             <Details Object={news.details} />
           </div>
         </div>
-        <aside className="aside-content">
-          <div>
-            <NewsCards recharge={false} />
-          </div>
-        </aside>
+        <div className="aside-container">
+          <h3>Más noticias</h3>
+          <aside className="aside-content">
+            <div>
+              <AsideCardsForNews />
+            </div>
+          </aside>
+        </div>
       </div>
       <Footer />
-
     </div>
   );
 };
-
-
 
 export default EachNewPage;
