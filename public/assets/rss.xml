@@ -8,7 +8,7 @@
     <link>http://localhost:3000/news</link>
     <generator>RSS for Node</generator>
     <lastBuildDate>Sat, 13 May 2023 20:00:00 GMT</lastBuildDate>
-    <atom:link href="localhost:3000/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ecoareas-3edd0.web.app/assets/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>
         <![CDATA[ Organizamos una jornada de sensibilización y limpieza en la Playa de Los Cancajos ]]>
@@ -16,7 +16,7 @@
       <description>
         <![CDATA[ Hemos llevado a cabo durante este sábado, 15 de abril, una acción de limpieza de playas y sensibilización medioambiental en la Playa de Los Cancajos ... ]]>
       </description>
-      <link>http://localhost:3000/news</link>
+      <link>https://ecoareas-3edd0.web.app/news/0</link>
       <guid isPermaLink="false">643d38b1967bd0809358cfdd</guid>
       <pubDate>Mon, 17 Apr 2023 12:36:11 GMT</pubDate>
       <enclosure url='https://firebasestorage.googleapis.com/v0/b/ecoareas-3edd0.appspot.com/o/News%2FNoticia-1.png?alt=media' length="0" type="image/png" />
@@ -38,7 +38,7 @@
       <description>
         <![CDATA[ Tras la buena acogida de la iniciativa de Ecoáreas Mardetodos en la playa de La Laja, en Gran Canaria, el proyecto ... ]]>
       </description>
-      <link>http://localhost:3000/news</link>
+      <link>https://ecoareas-3edd0.web.app/news/1</link>
       <guid isPermaLink="false">64353767bb1c2aa17f7563be</guid>
       <pubDate>Tue, 11 Apr 2023 10:38:25 GMT</pubDate>
       <enclosure url='https://firebasestorage.googleapis.com/v0/b/ecoareas-3edd0.appspot.com/o/News%2FNoticia-2.png?alt=media' length="0" type="image/png" />
@@ -63,7 +63,7 @@
       <description>
         <![CDATA[ La Ecoárea de Las Playitas, en el municipio de Tuineje, en Fuerteventura, se ha convertido en la séptima, de las 16 diagnosticadas en el Archipiélago, en firmar el ... ]]>
       </description>
-      <link>http://localhost:3000/news</link>
+      <link>https://ecoareas-3edd0.web.app/news/2</link>
       <guid isPermaLink="false">63a483a6bb686461cbe881b3</guid>
       <pubDate>Thu, 22 Dec 2022 16:21:21 GMT</pubDate>
       <enclosure url='https://firebasestorage.googleapis.com/v0/b/ecoareas-3edd0.appspot.com/o/News%2FNoticia-3.png?alt=media' length="0" type="image/png" />
@@ -92,7 +92,7 @@
       <description>
         <![CDATA[ Ecoáreas Mardetodos ha llevado a cabo este fin de semana acciones en El Hierro y La Gomera para sensibilizar e implicar a los vecinos y vecinas en la dinamización y ... ]]>
       </description>
-      <link>http://localhost:3000/news</link>
+      <link>https://ecoareas-3edd0.web.app/news/3</link>
       <guid isPermaLink="false">64182c6660553d0a278912d9</guid>
       <pubDate>Mon, 20 Mar 2023 10:04:32 GMT</pubDate>
       <enclosure url='https://firebasestorage.googleapis.com/v0/b/ecoareas-3edd0.appspot.com/o/News%2FNoticia-4.png?alt=media' length="0" type="image/png" />
@@ -118,7 +118,7 @@
       <description>
         <![CDATA[ La actividad, impulsada por la Consejería de Turismo, Industria y Comercio del Gobierno de Canarias a través del proyecto de economía azul, ha tenido lugar en ... ]]>
       </description>
-      <link>http://localhost:3000/news</link>
+      <link>https://ecoareas-3edd0.web.app/news/4</link>
       <guid isPermaLink="false">6421a8144e1f6177ce85ae9d</guid>
       <pubDate>Mon, 27 Mar 2023 14:31:24 GMT</pubDate>
       <enclosure url='https://firebasestorage.googleapis.com/v0/b/ecoareas-3edd0.appspot.com/o/News%2FNoticia-5.png?alt=media' length="0" type="image/png" />
@@ -140,7 +140,7 @@
       <description>
         <![CDATA[ Ecoáreas Mardetodos reúne el próximo lunes, 19 de diciembre, a instituciones, organizaciones, empresas de la zona y residentes en el municipio de ... ]]>
       </description>
-      <link>http://localhost:3000/news</link>
+      <link>https://ecoareas-3edd0.web.app/news/5</link>
       <guid isPermaLink="false">639c98e82fe82e7eef312682</guid>
       <pubDate>Fri, 16 Dec 2022 16:15:30 GMT</pubDate>
       <enclosure url='https://firebasestorage.googleapis.com/v0/b/ecoareas-3edd0.appspot.com/o/News%2FNoticia-6.png?alt=media' length="0" type="image/png" />

@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import newsContent from '../../services/news.service';
-import Details from '../details/Details';
 import CardForNews from '../cardsForNews/CardForNews';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencil, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import "./newsCards.css";
-
 
 function NewsCards(props) {
 
@@ -91,15 +89,6 @@ function NewsCards(props) {
     <div>
       <div className="news-container">
         {showCards()}
-      </div>
-      <div id="news-details">
-        {cards.map((news) => (
-          <div key={news.id} className={`button${news.id}`}>
-            <h2>{news.text}</h2>
-            <Details Object={news.details} />
-          </div>
-        ))}
-        <button onClick={newsContent.scrollBack} id='scollBackButton'>volver</button>
       </div>
     </div>
   );

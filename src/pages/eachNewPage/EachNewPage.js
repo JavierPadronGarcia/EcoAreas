@@ -1,49 +1,70 @@
-import NavigationBar from "../../components/navbar/NavigationBar";
-import newsService from "../../services/news.service";
-import Footer from "../../components/footer/Footer";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import NavigationBar from "../../components/navbar/NavigationBar";
 import Details from "../../components/details/Details";
+import newsService from "../../services/news.service";
+import Footer from "../../components/footer/Footer";
+import NewsCards from "../../components/newsCards/NewsCards";
+import "./EachNewPage.css";
 
 function EachNewPage() {
   const { id } = useParams();
-  const [key, setKey] = useState(null);
-  const [title, setTitle] = useState("");
-  const [details, setDetails] = useState([]);
-  const [image, setImage] = useState([]);
+  const [news, setNews] = useState(null);
 
-  const getNews = () => {
-    newsService.getOneNew(id).then(data => {
-      console.log(data.val())
-      setDetails(data.val().details);
-      setImage(data.val().img);
-      setTitle(data.val().text);
-      setKey(data.val().key);
-      showNews();
-    })
-  }
+  useEffect(() => {
+    const getNews = async () => {
+      const data = await newsService.getOneNew(id);
+      const information = {
+        key: data.key,
+        id: data.val().id,
+        img: data.val().img,
+        text: data.val().text,
+        details: data.val().details
+      };
+      setNews(information);
+    };
+    getNews();
+  }, [id]);
 
-  const showNews = () => {
+  //show the uncompleted page until get the firebase data
+  if (!news) {
     return (
-      <div>
-        <h1>{title}</h1>
-        <p>{key}</p>
+      <div className="container">
+        <NavigationBar />
+        <div className="new-content">
+        </div>
+        <Footer />
       </div>
     );
   }
 
-  useEffect(() => {
-    showNews()
-  })
-
   return (
     <div className="container">
       <NavigationBar />
-      {showNews()}
+      <div className="main-container">
+        <div className="new-content">
+          <div className="title-container">
+            <h2>{news.text}</h2>
+          </div>
+          <div className="img-container">
+            <img src={news.img[0]} alt="information" />
+          </div>
+          <div className="details">
+            <Details Object={news.details} />
+          </div>
+        </div>
+        <aside className="aside-content">
+          <div>
+            <NewsCards recharge={false} />
+          </div>
+        </aside>
+      </div>
       <Footer />
+
     </div>
   );
+};
 
-}
+
 
 export default EachNewPage;
