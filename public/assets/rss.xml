@@ -5,7 +5,7 @@
   <channel>
     <title><![CDATA[ Ecoáreas]]></title>
     <description><![CDATA[ Una iniciativa canaria, innovadora y pionera para dinamizar las zonas costeras de interés ecoturístico. ]]></description>
-    <link>http://localhost:3000/news</link>
+    <link>https://ecoareas-3edd0.web.app/news</link>
     <generator>RSS for Node</generator>
     <lastBuildDate>Sat, 13 May 2023 20:00:00 GMT</lastBuildDate>
     <atom:link href="https://ecoareas-3edd0.web.app/assets/rss.xml" rel="self" type="application/rss+xml" />
