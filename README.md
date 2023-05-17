@@ -41,18 +41,36 @@ In the Eco-areas your opinion and your action are of vital importance.
 
 We invite you to actively participate in the processes for the promotion of the Canarian Network of Coastal Ecotourism Areas.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+</br></br>
 
-### Built With
+### Other punctuations:
 
-* [![React][React.js]][React-url]
-
-If you want to see the first design of this project go to the links below:
+see the first design of this project:
 
 - [mobile view]
 - [tablet view]
 - [desktop view]
 
+If you want to see the project working, go to this link:
+[EcoáreasPage]
+</br></br>
+</br></br>
+This project has and rss feed implementation, here I show you an image from a free rss file reader:
+</br></br>
+<img src="public\assets\img\RSSimage.png" alt="rss-file-show">
+</br></br>
+If you click in one of the news, they redirect you to the news page:
+</br></br>
+<img src=public\assets\img\RSSimage-2.png>
+</br>
+And here is the link to the rss file: https://ecoareas-3edd0.web.app/assets/rss.xml
+
+this rss file reader is [RSS Viewer]
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Built With
+
+* [![React][React.js]][React-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- GETTING STARTED -->
@@ -129,11 +147,17 @@ Project Link: [https://github.com/JavierPadronGarcia/EcoAreas.git](https://githu
 ## Acknowledgments
 
 * [figma] -> Design 
+
 * [React Leaflet] -> Open Source Map
 * [Font Awesome] -> Free Icons
+
 * [Flexbox Guide]
+
 * [Splider] -> easy form to implements an splider
+
 * [CookiesExample] -> example to how to write cookies policity
+
+* [firebase] -> database with the information of the news, storage for the photos and hosting
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -153,3 +177,9 @@ Project Link: [https://github.com/JavierPadronGarcia/EcoAreas.git](https://githu
 [tablet view]:https://www.figma.com/proto/xKjOHzaoEbItKQAmQmKsKx/Javier-Padr%C3%B3n-Garc%C3%ADa--Dise%C3%B1o-Eco%C3%A1reas?type=design&node-id=25-1176&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=25%3A1176&show-proto-sidebar=1
 
 [desktop view]:https://www.figma.com/proto/xKjOHzaoEbItKQAmQmKsKx/Javier-Padr%C3%B3n-Garc%C3%ADa--Dise%C3%B1o-Eco%C3%A1reas?type=design&node-id=25-2175&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=25%3A2175&show-proto-sidebar=1
+
+[EcoáreasPage]: https://ecoareas-3edd0.web.app
+
+[RSS Viewer]: https://rssviewer.app
+
+[firebase]: https://firebase.google.com/?hl=es
