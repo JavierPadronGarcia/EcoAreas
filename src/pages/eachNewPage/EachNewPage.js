@@ -11,18 +11,19 @@ function EachNewPage() {
   const { id } = useParams();
   const [news, setNews] = useState(null);
 
-  useEffect(() => {
-    const getNews = async () => {
-      const data = await newsService.getOneNew(id);
-      const information = {
-        key: data.key,
-        id: data.val().id,
-        img: data.val().img,
-        text: data.val().text,
-        details: data.val().details
-      };
-      setNews(information);
+  const getNews = async () => {
+    const data = await newsService.getOneNew(id);
+    const information = {
+      key: data.key,
+      id: data.val().id,
+      img: data.val().img,
+      text: data.val().text,
+      details: data.val().details
     };
+    setNews(information);
+  };
+
+  useEffect(() => {
     getNews();
   }, [id]);
 
@@ -56,9 +57,7 @@ function EachNewPage() {
         <div className="aside-container">
           <h3>Más noticias</h3>
           <aside className="aside-content">
-            <div>
-              <AsideCardsForNews />
-            </div>
+            <AsideCardsForNews />
           </aside>
         </div>
       </div>
