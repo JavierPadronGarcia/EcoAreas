@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import newsContent from '../../services/news.service';
-import Details from '../details/Details';
 import CardForNews from '../cardsForNews/CardForNews';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencil, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import "./newsCards.css";
-
 
 function NewsCards(props) {
 
@@ -30,7 +28,6 @@ function NewsCards(props) {
   const removeNew = (key, image) => {
     document.getElementById("form-validator-message").style.display = "none";
     newsContent.removeNew(key).then(() => {
-      document.getElementById("scollBackButton").style.display = "none";
       getCards();
       newsContent.removeImage(image[1]);
     });
@@ -67,8 +64,8 @@ function NewsCards(props) {
       <div className='news-cards'>
         {
           cards.map((news) => (
-            <div>
-              <CardForNews ident={news.id} image={news.img} text={news.text} key={news.key} />
+            <div className='modify-card'>
+              <CardForNews ident={news.key} image={news.img} text={news.text} key={news.key} />
               <div className='buttons-container'>
                 <button id='delete-button' onClick={() => removeNew(news.key, news.img)}><FontAwesomeIcon icon={faTrashCan} id='delete-icon' /></button>
                 <button id='update-button' onClick={() => putInfoInTheForm(news.key)}><FontAwesomeIcon icon={faPencil} id='update-icon' /></button>
@@ -91,15 +88,6 @@ function NewsCards(props) {
     <div>
       <div className="news-container">
         {showCards()}
-      </div>
-      <div id="news-details">
-        {cards.map((news) => (
-          <div key={news.id} className={`button${news.id}`}>
-            <h2>{news.text}</h2>
-            <Details Object={news.details} />
-          </div>
-        ))}
-        <button onClick={newsContent.scrollBack} id='scollBackButton'>volver</button>
       </div>
     </div>
   );

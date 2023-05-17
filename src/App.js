@@ -5,6 +5,7 @@ import Newspage from './pages/newspage/Newspage';
 import ModifyNews from "./pages/modifyNews/ModifyNews";
 import PoliticsPage from "./pages/politicsPage/PoliticsPage";
 import './App.css';
+import EachNewPage from "./pages/eachNewPage/EachNewPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/network" element={<EcoareasNetwork />} />
         <Route path="/politics" element={<PoliticsPage />} />
         <Route path="/modifyNews" element={<ModifyNews />} />
+        <Route path="/news/:id" element={<EachNewPage />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,11 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import "./cardForNews.css";
 
-function cardForNews(props) {
+function CardForNews(props) {
   const ident = props.ident;
   const image = props.image;
   const text = props.text;
+  const navigate = useNavigate();
 
+  /*
   const showDetails = () => {
+    
     let newsList = document.querySelectorAll('#news-details>div');
     document.getElementById("scollBackButton").style.display = "block";
 
@@ -17,7 +21,7 @@ function cardForNews(props) {
 
     document.getElementById("news-details").scrollIntoView({ behavior: 'smooth' });
   }
-
+*/
   return (
     <div className='Card-container'>
       <div key={ident} className='new-card'>
@@ -27,7 +31,7 @@ function cardForNews(props) {
         <div id='card-text-container'>
           <div id='text-title'>{text}</div>
           <div id='link-news'>
-            <div><button id="link" onClick={showDetails}>Ver detalles</button></div>
+            <div><button id="link" onClick={() => navigate(`/news/${ident}`)}>Ver detalles</button></div>
           </div>
         </div>
       </div>
@@ -37,4 +41,4 @@ function cardForNews(props) {
 
 
 
-export default cardForNews;
+export default CardForNews;
